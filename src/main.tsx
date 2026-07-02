@@ -5,6 +5,7 @@ import './main.css'
 
 import {  BrowserRouter, Routes, Route} from "react-router";
 import Public from './Public/Public.tsx';
+import Private from './Private/Private.tsx';
 //import Private from './Private/Private.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -12,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path='/*' element={<Public/>}/>
-        {/* <Route path='/private/*' element={<Private/>}/> */}
+        <Route path='/private/*' element={<Private/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,

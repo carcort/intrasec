@@ -1,46 +1,46 @@
 
 export const dataSidebarIndustrial = [
+//  {
+//    id: '1',
+//    nombre: 'Logo',
+//    icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/logoPrincipal.png',
+//    ruta: '/',
+//    abrir: false,
+//    modal: [
+//      {
+//        id: '1',
+//        titulo: '-',
+//        iconoTitulo: '-',
+//        logicaSearch: '',
+//        iconoSearch: '',
+//        dataLista: [
+//         {
+//          id: '1',
+//          icono: '-',
+//          nombre: 'Mis Tareas'
+//         },
+//         {
+//          id: '2',
+//          icono: '-',
+//          nombre: 'Otras'
+//         },
+//         {
+//          id: '3',
+//          icono: '-',
+//          nombre: 'Otra2'
+//         },
+//         {
+//          id: '4',
+//          icono: '-',
+//          nombre: 'Otra3'
+//         },
+
+//        ]
+//      }
+//    ]
+//  },
  {
    id: '1',
-   nombre: 'Logo',
-   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/logoPrincipal.png',
-   ruta: '/',
-   abrir: false,
-   modal: [
-     {
-       id: '1',
-       titulo: '-',
-       iconoTitulo: '-',
-       logicaSearch: '',
-       iconoSearch: '',
-       dataLista: [
-        {
-         id: '1',
-         icono: '-',
-         nombre: 'Mis Tareas'
-        },
-        {
-         id: '2',
-         icono: '-',
-         nombre: 'Otras'
-        },
-        {
-         id: '3',
-         icono: '-',
-         nombre: 'Otra2'
-        },
-        {
-         id: '4',
-         icono: '-',
-         nombre: 'Otra3'
-        },
-
-       ]
-     }
-   ]
- },
- {
-   id: '2',
    nombre: 'Home',
    icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/home.png',
    ruta: '/',
@@ -80,7 +80,7 @@ export const dataSidebarIndustrial = [
    
  },
  {
-   id: '3',
+   id: '2',
    nombre: 'Reciente',
    icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/reloj.png',
    ruta: '/',
@@ -119,7 +119,7 @@ export const dataSidebarIndustrial = [
    ]
  },
  {
-   id: '4',
+   id: '3',
    nombre: 'Favoritos',
    icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
    ruta: '/',

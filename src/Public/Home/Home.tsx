@@ -1,4 +1,4 @@
-
+//import { Outlet } from "react-router";
 const Home = () => {
   return (
     <div className="w-full h-full  grid place-items-center">
@@ -28,6 +28,10 @@ const Home = () => {
               </div>
            </article>
         </section>
+
+
+        
+
     </div>
   )
 }

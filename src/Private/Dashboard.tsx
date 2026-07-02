@@ -32,44 +32,7 @@ const Dashboard = () => {
 
   return (
     <>
-    <aside className="w-[3%] ">
-            
-            <Sidebar
-                data= {dataSidebarIndustrial} 
-            />
-
-        </aside>
-        <main className="w-[97%]">
-          <nav className="w-full h-[4%] bg-violet-400 flex justify-end">
-            <Navbar
-              data={dataNavbarPrivate}  
-              //handleClickNavbar={handleClickNavbarPrivate}
-
-            />
-          </nav>
-          <section className="w-full h-[96%]  flex items-center">
-            <article className="w-[70%] h-[95%]  ml-16">
-              <header className="w-full h-[4%]  flex items-center">
-                Home
-              </header>
-              <div className="w-full h-[4%]  flex gap-x-2 items-center bg-gray-100">
-                <section>
-                  <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png" alt="a" />
-                </section>
-                <section>
-                  Intrasec
-                </section>
-              </div>
-              <div className="w-full h-[4%] ">
-                  sfsd
-              </div>
-              <div className="w-full h-[88%] ">
-                sdsssssdxxxxx
-              </div>
-            </article>
-
-          </section>
-        </main>
+      dahboardddddddddddddddddddddd
     
     </>
   )
