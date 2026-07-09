@@ -7,7 +7,13 @@ import { dataNavbarPublic } from "../Components/Utils/dataNavbarPublic";
 const LayoutPublic = () => {
 
 
-  const entorno = 'publicp'
+  const entorno = 'publico'
+
+
+  const handleClickNavbarPublic =()=>{
+    console.log('entono publico');
+    
+  }
 
   return (
     <div className="w-screen h-screen bg-violet-400">
@@ -15,7 +21,7 @@ const LayoutPublic = () => {
       <nav className={`w-[70%] h-full flex justify-end`}>
        <Navbar
           data={dataNavbarPublic}  
-          //handleClickNavbar={handleClickNavbarPublic}
+          handleClickNavbar={handleClickNavbarPublic}
           entorno={entorno}
        
        />

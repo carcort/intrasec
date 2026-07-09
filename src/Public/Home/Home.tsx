@@ -1,5 +1,20 @@
-//import { Outlet } from "react-router";
+import { useNavigate } from "react-router";
+
+
+
+
 const Home = () => {
+
+  const router = useNavigate()
+
+
+  const handleClickIngresar =()=>{
+      router('/private')
+      //console.log('si lo pilla');
+      
+  }
+
+
   return (
     <div className="w-full h-full  grid place-items-center">
         <section className="w-[70%] h-[60%]  flex">
@@ -13,8 +28,8 @@ const Home = () => {
               </h2>
             </div>
             <div className="w-full h-[25%] flex gap-x-5 ">
-              <button className="bg-blue-600 text-white w-full h-[50%] cursor-pointer hover:bg-blue-700">
-                Solicitar Demo
+              <button onClick={handleClickIngresar} className="bg-blue-600 text-white w-full h-[50%] cursor-pointer hover:bg-blue-700">
+                Ingresa
               </button>
               <button className="bg-[#38ff02] text-white w-full h-[50%] cursor-pointer hover:bg-green-600"> 
                 Prueba Gratis!

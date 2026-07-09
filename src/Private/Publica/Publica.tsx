@@ -1,31 +1,38 @@
+
+
+
+
+
 import { Navigate } from 'react-router';
-import Sidebar from '../../Components/Sidebar'
-import { dataSidebarIndustrial } from '../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial'
 
-const Legal = ({usuario} ) => {
 
-  const {id,  icono, apellido_paterno,estaAutenticado, apellido_materno, gerencia, primer_nombre} = usuario
+const Publica = ({usuario}) => {
+
+  const {id,  icono, apellido_paterno,estaAutenticado, apellido_materno, gerencia, primer_nombre, tipo_empresa, division} = usuario
+
+  //console.log('user:', usuario.estaAutenticado);
+  
 
   if (!estaAutenticado) {
     return <Navigate to={'/'} replace />;
   }
 
-  if(gerencia !== 'Legal'){
+  if(tipo_empresa !== 'Privada'){
     return <Navigate to={'/'} replace />;
   }
+  
 
-  if(gerencia === 'Legal'){
-      return (
-    <>
-          <aside className="w-[3%] "> 
-            <Sidebar
-                data= {dataSidebarIndustrial} 
-            />
-         </aside>
-         <section className="w-full h-[96%]  flex items-center">
-            <article className="w-[70%] h-[95%]  ml-16">
+  if(division ==='Industria'){
+    return (
+        <>
+          
+
+
+          
+         <section className="w-full h-[96%]  flex items-center ">
+            {/* <article className="w-[70%] h-[95%]  ml-16">
               <header className="w-full h-[4%]  flex items-center">
-                legallll - {estaAutenticado && 'AUTENTICADO'}
+                Cliente  - {estaAutenticado && 'AUTENTICADO'}
               </header>
               <div className="w-full h-[4%]  flex gap-x-2 items-center bg-gray-100">
                 <section>
@@ -41,7 +48,9 @@ const Legal = ({usuario} ) => {
               <div className="w-full h-[88%] ">
                 sdsssssdxxxxx
               </div>
-            </article>
+            </article> */}
+
+            clienteee --- privadaaa --- industriaaa
           </section>
         </>
   )
@@ -51,4 +60,4 @@ const Legal = ({usuario} ) => {
   
 }
 
-export default Legal
+export default Publica
