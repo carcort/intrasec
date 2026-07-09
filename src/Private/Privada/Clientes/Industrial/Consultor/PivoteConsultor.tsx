@@ -15,16 +15,16 @@ const PivoteConsultor = ({usuario}) => {
   }
 
   if(area === 'Energia'){
-    return <Navigate to={'/private/clientes/privada/clientes/industrial/consultor/energia'} replace />;
+    return <Navigate to={'/private/clientes/privada/industrial/consultor/energia'} replace />;
   }
   else if(area === 'Sanitaria'){
-    return <Navigate to={'/private/clientes/privada/clientes/industrial/consultor/sanitaria'} replace />;
+    return <Navigate to={'/private/clientes/privada/industrial/consultor/sanitaria'} replace />;
   }
    else if(area === 'Telecomunicaciones'){
-    return <Navigate to={'/private/clientes/privada/clientes/industrial/consultor/Telecomunicaciones'} replace />;
+    return <Navigate to={'/private/clientes/privada/industrial/consultor/Telecomunicaciones'} replace />;
   }
    else if(area === 'Transporte'){
-    return <Navigate to={'/private/clientes/privada/clientes/industrial/consultor/transporte'} replace />;
+    return <Navigate to={'/private/clientes/privada/industrial/consultor/transporte'} replace />;
   }
   else {
     return <Navigate to={'/'} replace />;

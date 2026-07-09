@@ -5,7 +5,7 @@ const LayoutComercial = () => {
   return (
     <div className='bg-green-500 w-full h-full'>
      <header>
-      otrass weaaaaaaaaaaaaa del comercialllll
+      layout comercial
      </header>
      <div>
       <Outlet />

@@ -3,9 +3,9 @@ import { Outlet } from 'react-router'
 
 const LayoutPrivada = () => {
   return (
-    <div className='bg-green-500 w-full h-full'>
+    <div className=' w-full h-full'>
      <header>
-      privada o publica
+      layout privada
      </header>
      <div>
       <Outlet />

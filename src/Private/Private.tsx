@@ -26,9 +26,9 @@ const Private = () => {
     apellido_materno: 'Lopez',
     gerencia: 'Clientes',
     tipo_empresa: 'Privada',
-    division: 'Comercial',
+    division: 'Industrial',
     cargo: 'Consultor',
-    area: 'Banca',
+    area: 'Energia',
     sub_area: '',
   }
 
