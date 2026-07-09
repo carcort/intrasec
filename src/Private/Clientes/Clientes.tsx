@@ -3,8 +3,9 @@ import LayoutClientes from "./LayoutClientes"
 import PivoteClientes from "./PivoteClientes"
 // import Industrial from "./Industrial/Industrial"
 // import Comercial from "./Comercial/Comercial"
-import Privada from "../Privada"
-import Publica from "../../Publica/Publica"
+//import Privada from "../Privada/Privada"
+import Publica from "./Publica/Publica"
+import Privada from "./Privada/Privada"
 
 
 const Clientes = ({usuario}) => {
