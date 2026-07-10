@@ -2,20 +2,12 @@
 
 const Sidebar = ({data}) => {
   return (
-    <div className="w-full h-[60%] bg-gray-100 grid  place-items-center">
-      <div className="w-[90%] h-[90%]  px-4">
-        <header className="w-full h-[10%] flex items-center gap-x-2">
-          <div className="grid ">
-            <img className="w-4 h-4" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png" alt="a" />
-          </div>
-          <div>
-            Empleados
-          </div>
-        </header>
-        <div className="w-full h-[90%] grid grid-rows-8">
+    <div className="w-full h-[90%] bg-gray-50 grid  place-items-center rounded">
+      <div className="w-full h-full ">
+        <div className="w-full h-full grid grid-rows-12">
           {data.map((el)=>{
-            return <button className={`pl-2 w-full h-full flex items-center hover:bg-gray-200 cursor-pointer`}>
-              {el.nombre}
+            return <button className={`w-full h-full grid place-items-center hover:bg-gray-200 cursor-pointer py-3`}>
+              <img className="w-5 h-5" src={el.icono} alt="aaaaaaaaaa" />
             </button>
           })}
         </div>

@@ -10,8 +10,14 @@ const Pivote = ({usuario}) => {
     return <Navigate to={'/'} replace />;
   }
 
-  if(gerencia === 'Clientes'){
+  if(gerencia === 'Directiva'){
+    return <Navigate to={'/private/directiva'} replace />;
+  }
+  else if(gerencia === 'Clientes'){
     return <Navigate to={'/private/clientes'} replace />;
+  }
+  else if(gerencia === 'Rrhh'){
+    return <Navigate to={'/private/rrhh'} replace />;
   }
   else if(gerencia === 'Finanzas'){
     return <Navigate to={'/private/finanzas'} replace />;
