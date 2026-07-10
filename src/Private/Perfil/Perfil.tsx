@@ -9,7 +9,7 @@ import PerfilPersonal from "./PerfilPersonal/PerfilPersonal"
 const Perfil = ({usuario}) => {
   return (
     <Routes>
-          <Route path="/laboral" element={<LayoutPerfil usuario={usuario} />}>
+          <Route path="/" element={<LayoutPerfil usuario={usuario} />}>
             <Route index element={<PerfilLaboral usuario={usuario } />} />
             {/* <Route path="laboral/*" element={<PerfilLaboral usuario={usuario } />} /> */}
             <Route path="personal/*" element={<PerfilPersonal usuario={usuario } />} />

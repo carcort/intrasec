@@ -3,7 +3,7 @@
 export const dataEmpleados = [
     {
       id: '1',
-      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/adminAdmin.png',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
       primer_nombre: 'Martina',
       apellido_paterno: 'Lopez',
       apellido_materno: 'Gomez',

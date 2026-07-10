@@ -258,21 +258,7 @@ const LayoutPrivate = ({usuario}) => {
 
               <div className="w-[67%] h-full grid place-items-center">
                   <input className="border border-gray-200 w-[50%] h-[50%] " type="text" />
-              </div>
-
-              {/* <div className="flex w-[10%] items-center">
-                  <div className="w-[40%] f-[50%]">
-                    1-15 /55
-                  </div>
-                  <div className="w-[40%] h-[50%] flex">
-                    <button className="w-[50%] bg-gray-100 cursor-pointer hover:bg-gray-200">
-                      {'<'}
-                    </button>
-                    <button className="w-[50%] bg-gray-100 cursor-pointer  hover:bg-gray-200">
-                      {'>'}
-                    </button>
-                  </div>
-              </div> */}
+              </div>        
 
               <div className="w-[13%] h-full  flex">
                 {dataCabeceraFiltros.map((el)=>{

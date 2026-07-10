@@ -4,6 +4,9 @@ import { Outlet } from "react-router"
 
 const LayoutRrhh = () => {
   return (
+
+
+    
     <div className=' w-full h-full grid place-items-center'>
       <div className="w-[98%] h-[90%]">
         <div className="w-full h-[5%]  flex justify-end">
