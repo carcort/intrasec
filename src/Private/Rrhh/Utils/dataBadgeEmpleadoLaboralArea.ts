@@ -31,13 +31,13 @@ export const dataBadgeEmpleadoLaboralArea = [
 
    {
       id: '5',
-      titulo: 'AFP *',
-      placeHolder: 'Habitat, Cuprum, Etc.',
+      titulo: 'Fecha Legal de inicio del Contrato del Empleado *',
+      placeHolder: '19-08-2026',
    },
    {
       id: '6',
-      titulo: 'Seguro de Salud /Isapre /Fonasa *',
-      placeHolder: 'Cruz Blanca, Fonasa, Banmedica, Etc.',
+      titulo: 'Forma de Trabajo estblecida *',
+      placeHolder: 'Presencial / Mixto / Virtual',
    }
 
 ]
