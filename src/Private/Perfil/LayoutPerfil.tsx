@@ -1,4 +1,6 @@
 import { Outlet, useNavigate } from "react-router"
+import Sidebar from "../../Components/Sidebar"
+import { dataSidebarIndustrial } from "../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
 
 
 const LayoutPerfil = ({usuario}) => {
@@ -15,7 +17,12 @@ const LayoutPerfil = ({usuario}) => {
     }
 
   return (
-    <div className="w-full h-full grid place-items-center">
+    <div className="w-full h-full flex">
+        <aside className="w-[3%] h-[90%]">
+            <Sidebar 
+                data= {dataSidebarIndustrial} 
+            />
+        </aside>
        <section className="w-[95%] h-[95%] ">
            <div className="w-full h-[25%] flex">
                <div className="w-[20%] grid place-items-center">
@@ -46,7 +53,7 @@ const LayoutPerfil = ({usuario}) => {
            </div>
 
 
-           <div className="w-full h-[6%] flex  gap-x-1">
+           <div className="w-full h-[6%] flex bg-gray-100 gap-x-1">
             <button onClick={handleClickBotonLaboral} className="w-[5%] h-full cursor-pointer">
              Laboral
             </button>

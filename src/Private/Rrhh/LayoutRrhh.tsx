@@ -1,55 +1,65 @@
-import { Outlet } from "react-router"
+import { Outlet, useNavigate } from "react-router"
+//import { dataCabeceraFiltros } from "../Utils/dataCabeceraFiltros"
+import Sidebar from "../../Components/Sidebar"
+import { dataSidebarIndustrial } from "../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
 
 
 
 const LayoutRrhh = () => {
+
+  const navegar = useNavigate()
+
+
+      const handleClickAbrirModalNuevoEmpleado =()=>{
+          navegar('/private/rrhh/administrador/nuevoEmpleado')
+      }
+
+
   return (
 
-
-    
-    <div className=' w-full h-full grid place-items-center'>
-      <div className="w-[98%] h-[90%]">
-        <div className="w-full h-[5%]  flex justify-end">
-          <div className="w-[14%] h-full  flex">
-            {/* {dataFiltroEmpleados.map((el)=>{
-              return <div>
-                <div>
-                  {el.nombre}
+    <>
+        <section className="w-full h-[7%] px-3"> 
+            <article className="flex h-full justify-between">
+              <div className="flex w-[10%] h-full  items-center">
+                <button onClick={handleClickAbrirModalNuevoEmpleado} className="bg-violet-500 text-white w-[36%] h-[50%] hover:bg-violet-600 cursor-pointer rounded font-semibold">
+                  Nuevo
+                </button>
+                <div className="  w-[50%] h-[60%] grid place-items-center">
+                  Empleados
                 </div>
-                <div>
-                  {el.filtros.map((el)=>{
-                    return <button>
-                      {el.nombre}
-                    </button>
-                  })}
-                </div>
+                <button className=" text-white w-[14%] h-[60%] grid place-items-center cursor-pointer ">
+                  <img className="w-4 h-4" src={'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png'} alt="" />
+                </button>
               </div>
-            })} */}
 
-            aca van los filtros
-          </div>
-        </div>
-        <div className="w-full h-[85%]">
-            <Outlet/>
-        </div>
-
-        <section className="w-full h-[10%] flex justify-center ">
-          <div className="flex w-[10%] items-center justify-center h-full font-semibold text-gray-600 text-lg">
-                  <div className="w-[40%] f-[50%]">
-                    1-14 / 51
-                  </div>
-                  <div className="w-[40%] h-[50%] flex gap-x-1">
-                    <button className="w-[80%] bg-gray-100 cursor-pointer hover:bg-gray-200">
-                      {'<'}
-                    </button>
-                    <button className="w-[80%] bg-gray-100 cursor-pointer  hover:bg-gray-200">
-                      {'>'}
-                    </button>
-                  </div>
+              <div className="w-[90%] h-full grid place-items-center">
+                  <input className="border border-gray-200 w-[50%] h-[50%] " type="text" />
               </div>
-        </section>
-      </div>
-    </div>
+        
+
+              {/* <div className="w-[13%] h-full  flex">
+                {dataCabeceraFiltros.map((el)=>{
+                  return <button className="w-[20%] grid place-items-center cursor-pointer">
+                    <img className="w-5 h-5" src={el.icono} alt="sdds" />
+                  </button>
+                })}
+              </div> */}
+            </article>
+            
+       </section>
+
+       {/* ACA VA TODO LO QUE VA A CAMBIAR */}
+       <main className="w-full h-[88%] flex">
+        <aside className="w-[3%] h-full"> 
+            <Sidebar
+                data= {dataSidebarIndustrial} 
+            />
+         </aside>
+         <div className="w-full h-full grid place-items-center">
+              <Outlet />
+         </div>
+       </main>
+    </>
   )
 }
 

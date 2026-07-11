@@ -46,6 +46,14 @@ const Navbar = ({data, entorno, handleClickNavbar,  gerencia}) => {
               </button>
             })}
         }
+
+        // else if(gerencia === 'Tecnico'){
+        //     {return dataNavbarTecnico.map((el)=>{
+        //       return <button className="cursor-pointer hover:underline">
+        //         {el.nombre}
+        //       </button>
+        //     })}
+        // }
         else {
           console.log('as');
         }

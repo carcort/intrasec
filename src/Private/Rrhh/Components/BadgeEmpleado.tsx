@@ -5,7 +5,7 @@ const BadgeEmpleado = ({el}) => {
    const navegar = useNavigate()
 
    const handleClickBadgeEmpleado=()=>{
-      navegar('/private/perfil/laboral')
+      navegar('/private/perfil')
    }
 
   return (

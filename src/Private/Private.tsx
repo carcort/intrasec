@@ -5,7 +5,7 @@ import Finanzas from "./Finanzas/Finanzas";
 import Pivote from "./Pivote";
 import Rrhh from "./Rrhh/Rrhh";
 import Directiva from "./Directiva/Directiva";
-import LayoutPerfil from "./Perfil/LayoutPerfil";
+
 import Perfil from "./Perfil/Perfil";
 
 
