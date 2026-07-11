@@ -1,9 +1,12 @@
-import { Outlet, useNavigate } from "react-router";
+import { Outlet, useNavigate, useLocation, Link } from "react-router";
 import { dataCabeceraModal } from "./Utils/dataCabeceraModal";
 
 const Modal = () => {
 
  const navegar = useNavigate()
+ const location = useLocation();
+
+ const isActive = (path) => location.pathname === path;
 
  const handleClickGuardarModal =()=>{
   // logica de guardado
@@ -47,11 +50,18 @@ const Modal = () => {
              Nuevo Empleado
            </header>
            <main className="w-full h-[90%]">
-              <section className="w-[25%] h-[6%] grid grid-cols-5 gap-x-1">
+              <section className="w-[25%] h-[4%] grid grid-cols-5 gap-x-1">
                  {dataCabeceraModal.map((el)=>{
-                  return <button className="cursor-pointer hover:border-b hover:border-violet-500" onClick={(e)=>handleClickNavegarModal(e, el.id, el.nombre)}>
-                    {el.nombre}
-                  </button>
+                  return <Link
+                      to={el?.ruta} 
+                      className={`flex h-full justify-center items-center rounded-md font-medium ${
+                        isActive(el.ruta) 
+                          ? 'border-b-2 border-violet-300' 
+                          : ''
+                      }`}
+                    >
+                      {el?.nombre}
+                    </Link>
                  })}
 
                </section>

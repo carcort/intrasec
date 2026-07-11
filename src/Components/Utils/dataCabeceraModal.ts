@@ -15,12 +15,12 @@ export const dataCabeceraModal = [
    {
       id:'3',
       nombre: 'Nomina',
-      ruta: '/private/rrhh/administrador/nuevoEmpleado'
+      ruta: '/private/rrhh/administrador/nuevoEmpleado/nomina'
    },
    {
       id:'4',
       nombre: 'Competencias',
-      ruta: '/private/rrhh/administrador/nuevoEmpleado'
+      ruta: '/private/rrhh/administrador/nuevoEmpleado/competencias'
    },
    {
       id:'5',

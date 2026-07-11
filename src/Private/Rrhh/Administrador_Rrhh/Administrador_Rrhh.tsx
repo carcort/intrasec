@@ -5,6 +5,8 @@ import Modal from "../../../Components/Modal"
 import ModalEmpleadoLaboral from "../../../Components/ModalEmpleadoLaboral"
 import ModalEmpleadoPersonal from "../../../Components/ModalEmpleadoPersonal"
 import ModalEmpleadoContrato from "../../../Components/ModalEmpleadoContrato"
+import ModalEmpleadoNomina from "../../../Components/ModalEmpleadoNomina"
+import ModalEmpleadoCompetencias from "../../../Components/ModalEmpleadoCompetencias"
 
 
 const Administrador_Rrhh = ({usuario}) => {
@@ -44,17 +46,10 @@ const Administrador_Rrhh = ({usuario}) => {
 
         <Routes>
           <Route path="/nuevoEmpleado/*" element={<Modal />}>
-            {/* <Route index element={<PivoteRrhh usuario={usuario } />} />
-            <Route path="gerente/*" element={<Gerente_Rrhh usuario={usuario } />} />
-            <Route path="administrador/*" element={<Administrador_Rrhh usuario={usuario } />} />
-            <Route path="reclutador/*" element={<Reclutador usuario={usuario } />} />
-            <Route path="generalista/*" element={<Generalista_Rrhh usuario={usuario } />} /> */}
-            {/* <Route index element={<ModalEmpleadoLaboral  />} /> */}
-            {/* <Route path="private/rrhh/administrador/nuevoEmpleado/laboral*" element={<ModalEmpleadoLaboral />} /> */}
-            {/* <Route path="/private/rrhh/administrador/nuevoEmpleado/personal/*" element={<ModalEmpleadoPersonal />} />
-            <Route path="/private/rrhh/administrador/nuevoEmpleado/contrato/*" element={<ModalEmpleadoContrato />} /> */}
             <Route index element={<ModalEmpleadoLaboral  />} />
             <Route path="personal/*" element={<ModalEmpleadoPersonal />} />
+            <Route path="nomina/*" element={<ModalEmpleadoNomina />} />
+            <Route path="competencias/*" element={<ModalEmpleadoCompetencias />} />
             <Route path="contrato/*" element={<ModalEmpleadoContrato />} />
             
             

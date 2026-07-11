@@ -1,18 +1,17 @@
-import { dataBadgeEmpleadoLaboral } from "../Utils/dataBadgeEmpleadoLaboral"
-import { dataBadgeEmpleadoLaboralArea } from "../Utils/dataBadgeEmpleadoLaboralArea"
+
 import BadgeFormularioEmpleado from "./BadgeFormularioEmpleado"
 
 
-const FormularioEmpleado = () => {
+const FormularioEmpleado = ({titulo1, titulo2, data1, data2}) => {
   return (
      <form className='w-full h-full flex gap-x-16'>
 
        <section className="w-[50%] h-full">
           <header className="w-full h-[10%] grid place-items-center">
-            Datos
+            {titulo1}
           </header>
           <main className="w-full h-[90%] grid grid-rows-6">
-            {dataBadgeEmpleadoLaboral.map((el)=>{
+            {data1.map((el)=>{
              return  <BadgeFormularioEmpleado
                 el={el}
              />
@@ -23,10 +22,10 @@ const FormularioEmpleado = () => {
        </section>
        <section className="w-[50%] h-full">
            <header className="w-full h-[10%] grid place-items-center">
-             Area de Trabajo
+             {titulo2}
            </header>
            <main className="w-full h-[90%] grid grid-rows-6">
-            {dataBadgeEmpleadoLaboralArea.map((el)=>{
+            {data2.map((el)=>{
              return  <BadgeFormularioEmpleado
                 el={el}
              />
