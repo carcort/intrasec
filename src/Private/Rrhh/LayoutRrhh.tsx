@@ -1,19 +1,6 @@
-import { Outlet, useNavigate } from "react-router"
-//import { dataCabeceraFiltros } from "../Utils/dataCabeceraFiltros"
-import Sidebar from "../../Components/Sidebar"
-import { dataSidebarIndustrial } from "../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
-
-
+import { Outlet } from "react-router"
 
 const LayoutRrhh = () => {
-
-  // const navegar = useNavigate()
-
-
-  //     const handleClickAbrirModalNuevoEmpleado =()=>{
-  //         navegar('/private/rrhh/administrador/nuevoEmpleado')
-  //     }
-
 
   return (
 

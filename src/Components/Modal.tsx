@@ -20,33 +20,33 @@ const Modal = () => {
  }
 
 
- const handleClickNavegarModal=(e, id, nombre)=>{
-      if(id === '1'){
-        navegar('/private/rrhh/administrador/nuevoEmpleado')
-      }
-      else if(id==='2'){
-        navegar('/private/rrhh/administrador/nuevoEmpleado/personal')
-      }
-      else if(id==='3'){
-        navegar('/private/rrhh/administrador/nuevoEmpleado/nomina')
-      }
-      else if(id==='4'){
-        navegar('/private/rrhh/administrador/nuevoEmpleado/competencias')
-      }
-      else if(id==='5'){
-        navegar('/private/rrhh/administrador/nuevoEmpleado/contrato')
-      }
-      else {
-        console.log('as');
+//  const handleClickNavegarModal=(e, id, nombre)=>{
+//       if(id === '1'){
+//         navegar('/private/rrhh/administrador/nuevoEmpleado')
+//       }
+//       else if(id==='2'){
+//         navegar('/private/rrhh/administrador/nuevoEmpleado/personal')
+//       }
+//       else if(id==='3'){
+//         navegar('/private/rrhh/administrador/nuevoEmpleado/nomina')
+//       }
+//       else if(id==='4'){
+//         navegar('/private/rrhh/administrador/nuevoEmpleado/competencias')
+//       }
+//       else if(id==='5'){
+//         navegar('/private/rrhh/administrador/nuevoEmpleado/contrato')
+//       }
+//       else {
+//         console.log('as');
         
-      }
- }
+//       }
+//  }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm ">
          {/* Contenedor de la modal */}
           <div className="relative w-[80%] h-[80%]  p-6 mx-4 bg-white rounded-lg shadow-xl">
-           <header className="w-full h-[10%] grid place-items-center text-lg">
+           <header className="w-full h-[10%] grid place-items-center text-lg text-violet-700 font-semibold">
              Nuevo Empleado
            </header>
            <main className="w-full h-[90%]">
@@ -68,7 +68,7 @@ const Modal = () => {
                <div className="w-full h-[88%] ">
                 <Outlet />
                </div>
-               <div className="w-[98%] h-[6%] flex font-semibold justify-end ">
+               <div className="w-[98%] h-[5.5%] flex font-semibold justify-end ">
                   <div className="w-[15%] h-full  grid grid-cols-2 gap-x-2">
                       <button onClick={handleClickGuardarModal} className="bg-violet-500 text-white rounded cursor-pointer hover:bg-violet-600">
                        Guardar

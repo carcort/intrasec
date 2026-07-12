@@ -1,6 +1,6 @@
 
 
-const Vacaciones = () => {
+const Vacaciones = ({usuario}) => {
   return (
     <div>Vacaciones</div>
   )

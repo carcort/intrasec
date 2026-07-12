@@ -4,9 +4,9 @@ export const dataSidebarAdministrador_Rrhh = [
 
  {
    id: '1',
-   nombre: 'Home',
-   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/home.png',
-   ruta: '/',
+   nombre: 'Empleados',
+   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/perfil2.png',
+   ruta: '/private/rrhh/administrador/empleados',
    abrir: false,
    modal: [
      {
@@ -121,10 +121,10 @@ export const dataSidebarAdministrador_Rrhh = [
    ]
  },
  {
-   id: '3',
-   nombre: 'Favoritos',
-   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
-   ruta: '/',
+   id: '4',
+   nombre: 'Vacaciones',
+   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png',
+   ruta: '/private/rrhh/administrador/vacaciones',
    abrir: true,
    modal: [
      {
@@ -160,10 +160,10 @@ export const dataSidebarAdministrador_Rrhh = [
    ]
  },
  {
-   id: '3',
-   nombre: 'Favoritos',
-   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
-   ruta: '/',
+   id: '5',
+   nombre: 'Bonos',
+   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png',
+   ruta: '/private/rrhh/administrador/bonos',
    abrir: true,
    modal: [
      {
@@ -199,10 +199,10 @@ export const dataSidebarAdministrador_Rrhh = [
    ]
  },
  {
-   id: '3',
-   nombre: 'Favoritos',
-   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
-   ruta: '/',
+   id: '6',
+   nombre: 'Evaluaciones',
+   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
+   ruta: '/private/rrhh/administrador/evaluaciones',
    abrir: true,
    modal: [
      {

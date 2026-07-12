@@ -4,7 +4,7 @@ export const dataCabeceraModal = [
    {
       id:'1',
       nombre: 'Laboral',
-      ruta: '/private/rrhh/administrador/empleados/nuevoEmpleado'
+      ruta: '/private/rrhh/administrador/empleados/nuevoEmpleado/laboral'
    },
    {
       id:'2',

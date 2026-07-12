@@ -1,6 +1,4 @@
 
-
-
 import { Navigate } from "react-router";
 
 
@@ -19,17 +17,7 @@ const PivoteEmpleados = ({usuario}) => {
   if(cargo === 'Administrador_Rrhh'){
     return <Navigate to={'/private/rrhh/administrador/empleados/nuevoEmpleado/laboral'} replace />;
   }
-  // else if(cargo === 'Administrador_Rrhh'){
-  //   return <Navigate to={'/private/rrhh/administrador'} replace />;
-  // }
-
-  // else if(cargo === 'Reclutador'){
-  //   return <Navigate to={'/private/rrhh/reclutador'} replace />;
-  // }
-
-  // else if(cargo === 'Generalista'){
-  //   return <Navigate to={'/private/rrhh/generalista'} replace />;
-  // }
+ 
   
   else {
     return <Navigate to={'/'} replace />;

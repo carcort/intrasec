@@ -14,7 +14,7 @@ const BadgeEmpleado = ({el}) => {
          <img className="w-20 h-20" src={el.icono} alt="sdsd" />
       </div>
       <main className="w-full h-[70%] ">
-         <div className="flex w-full h-[20%] font-semibold gap-x-2  justify-center">
+         <div className="flex w-full h-[20%] text-gray-700 font-semibold gap-x-2  justify-center">
            <div>
             {el.primer_nombre}
            </div>

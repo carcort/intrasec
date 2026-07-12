@@ -1,6 +1,5 @@
 import { Outlet, useNavigate } from "react-router"
-import Sidebar from "../../Components/Sidebar"
-import { dataSidebarIndustrial } from "../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
+
 
 
 const LayoutPerfil = ({usuario}) => {
@@ -16,19 +15,21 @@ const LayoutPerfil = ({usuario}) => {
         navegar('/private/perfil/personal')
     }
 
+
+
+    const handleClickVolverPerfil =()=>{
+        navegar(-1)
+    }
+
   return (
-    <div className="w-full h-full flex">
-        <aside className="w-[3%] h-[90%]">
-            <Sidebar 
-                data= {dataSidebarIndustrial} 
-            />
-        </aside>
-       <section className="w-[95%] h-[95%] ">
+    <div className="w-full h-full grid place-items-center ">
+        
+       <section className="w-[95%] h-[90%] ">
            <div className="w-full h-[25%] flex">
-               <div className="w-[20%] grid place-items-center">
+               <div className="w-[15%] grid place-items-center">
                 <img className="w-40 h-40" src={usuario.icono} alt="sd" />
                </div>
-               <section className="w-[80%]">
+               <section className="w-[85%]">
                   
                  <section className="flex gap-x-2 text-2xl  h-[40%] items-center">
                     <div>
@@ -62,8 +63,14 @@ const LayoutPerfil = ({usuario}) => {
             </button>
            </div>
 
-           <div className="w-full h-[69%] ">
+           <div className="w-full h-[64%] ">
             <Outlet />
+           </div>
+
+           <div className="w-full h-[5%]  flex justify-end">
+            <button onClick={handleClickVolverPerfil} className="w-[6%] h-full bg-gray-700 text-white cursor-pointer hover:bg-black font-semibold">
+                Volver
+            </button>
            </div>
        </section>
     </div>

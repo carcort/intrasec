@@ -8,17 +8,17 @@ import ModalEmpleadoNomina from "../../../../Components/ModalEmpleadoNomina"
 import ModalEmpleadoCompetencias from "../../../../Components/ModalEmpleadoCompetencias"
 import ModalEmpleadoContrato from "../../../../Components/ModalEmpleadoContrato"
 import PivoteEmpleados from "./PivoteEmpleados"
-import Prueba from "../../../Prueba"
+
 
 
 const Empleados = ({usuario}) => {
   return (
     <div className="w-[95%] h-[95%]   ">
 
-      <div className="w-full h-[7%] flex justify-end bg-gray-400">
-        filtros del admin -de recc
+      <div className="w-full h-[7%] flex justify-end bg-gray-100">
+        filtros del admin 
       </div>
-      <div className="w-full h-[83%] grid grid-cols-7 grid-rows-2 gap-9">
+      <div className="w-full h-[83%] grid grid-cols-8 grid-rows-2 gap-6">
         {dataEmpleados.map((el)=>{
         return <BadgeEmpleado
                 el={el}
