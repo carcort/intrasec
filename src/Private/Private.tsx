@@ -27,10 +27,10 @@ const Private = () => {
     email_personal: 'juenitoxxxx@gmail.com',
     gerencia: 'Clientes',
     tipo_empresa: 'Publica',
-    division: 'Comercial',
+    division: 'Industrial',
     //cargo: 'Administrador_Rrhh',
-    cargo: 'Consultor',
-    area: 'Salud',
+    cargo: 'Gestor',
+    area: 'Energia',
     sub_area: '',
   }
 
@@ -46,8 +46,6 @@ const Private = () => {
             <Route path="clientes/*" element={<Clientes usuario={usuario } />} />
             <Route path="finanzas/*" element={<Finanzas usuario={usuario } />} />
             <Route path="rrhh/*" element={<Rrhh usuario={usuario } />} />
-
-
 
 
 
