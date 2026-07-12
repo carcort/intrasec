@@ -8,7 +8,7 @@ import { dataSidebarIndustrial } from "../../Components/Utils/dataSIdebar/dataSi
 const LayoutRrhh = () => {
   return (
 
-    <>
+    <div className="w-full h-full">
         <section className="w-full h-[7%] px-3"> 
             <article className="flex h-full justify-between">
               <div className="flex w-[11%] h-full  items-center">
@@ -50,7 +50,7 @@ const LayoutRrhh = () => {
               <Outlet />
          </div>
        </main>
-    </>
+    </div>
   )
 }
 

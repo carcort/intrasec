@@ -1,16 +1,8 @@
-
-//import { Navigate } from 'react-router';
-
 import { Route, Routes } from "react-router"
 import LayoutPrivada from "./LayoutPrivada"
 import PivotePrivada from "./PivotePrivada"
 import Industrial from "./Industrial/Industrial"
 import Comercial from "./Comercial/Comercial"
-// import Comercial from "./Clientes/Comercial/Comercial"
-// import Industrial from "./Clientes/Industrial/Industrial"
-//import Publica from "../Publica/Publica"
-// import Industrial from "../Clientes/Industrial/Industrial"
-// import Comercial from "../Clientes/Comercial/Comercial"
 
 
 const Privada = ({usuario}) => {
