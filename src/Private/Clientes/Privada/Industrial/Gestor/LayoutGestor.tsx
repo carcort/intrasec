@@ -2,19 +2,28 @@ import { Outlet } from "react-router"
 import Sidebar from "../../../../../Components/Sidebar"
 import { dataCabeceraFiltros } from "../../../../Utils/dataCabeceraFiltros"
 import { dataSidebarIndustrial } from "../../../../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
+import { dataSidebarGestorIndustrial } from "./Utils/dataSidebarGestorIndustrial"
 
 
 const LayoutGestor = () => {
+
+
+  const handleClickAbrirModalNuevoContacto =()=>{
+      console.log('nuevooo');
+      
+  } 
+
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full ">
      <section className="w-full h-[7%] px-3"> 
             <article className="flex h-full justify-between">
               <div className="flex w-[11%] h-full  items-center">
-                <button className="bg-violet-500 text-white w-[36%] h-[50%] hover:bg-violet-600 cursor-pointer rounded font-semibold">
-                  Nuevo
+                <button onClick={handleClickAbrirModalNuevoContacto} className="flex gap-x-2 bg-violet-500 text-white w-[50%] items-center justify-center h-[50%] hover:bg-violet-600 cursor-pointer rounded font-semibold">
+                  <img className="w-4 h-4" src='https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png' alt="sd" />
+                  Contacto
                 </button>
                 <div className="  w-[50%] h-[60%] grid place-items-center">
-                  CLIENTESx
+                  Contactos
                 </div>
                 <button className=" text-white w-[14%] h-[60%] grid place-items-center cursor-pointer ">
                   <img className="w-4 h-4" src={'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png'} alt="" />
@@ -41,7 +50,7 @@ const LayoutGestor = () => {
        <main className="w-full h-[88%] flex">
         <aside className="w-[3%] h-full"> 
             <Sidebar
-                data= {dataSidebarIndustrial} 
+                data= {dataSidebarGestorIndustrial} 
             />
          </aside>
          <div className="w-full h-full grid place-items-center">

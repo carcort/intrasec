@@ -26,10 +26,10 @@ const Private = () => {
     telefono_personal: '+5697562222',
     email_personal: 'juenitoxxxx@gmail.com',
     gerencia: 'Clientes',
-    tipo_empresa: 'Publica',
-    division: 'Comercial',
+    tipo_empresa: 'Privada',
+    division: 'Industrial',
     //cargo: 'Administrador_Rrhh',
-    cargo: 'Consultor',
+    cargo: 'Gestor',
     area: 'Salud',
     sub_area: '',
   }

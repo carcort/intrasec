@@ -1,0 +1,173 @@
+
+
+export const dataContactos = [
+    {
+      id: '1',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/login.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Tomas Rivas',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
+    },
+    {
+      id: '2',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/adminAdmin.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Externo',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '3',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Romina Torres',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png'
+    },
+    {
+      id: '4',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Javiera Pineda',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/check.png'
+    },
+    {
+      id: '5',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/check.png',
+      nombre_empresa: 'Hospital el Pino',
+      tipo_empresa: 'Privada',
+      division: 'Comercial',
+      area_empresa: 'Salud',
+      sub_area: '-',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Matias Rojas',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
+    },
+    {
+      id: '6',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nodejs.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Externo',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '7',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '8',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/vue.png',
+      nombre_empresa: 'Antucoya',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Mineria',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Pablo Marin',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/pregunta.png'
+    },
+    {
+      id: '9',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/svelte.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Externo',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '10',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Externo',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '11',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png'
+    },
+    {
+      id: '12',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
+      nombre_empresa: 'Aguas Andinas',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Sanitaria',
+      sub_area: '-',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '13',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
+      nombre_empresa: 'Colbun',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Energia',
+      sub_area: 'Generacion',
+      ingreso: 'Interno',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    {
+      id: '14',
+      icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
+      nombre_empresa: 'Aguas Antofagasta',
+      tipo_empresa: 'Privada',
+      division: 'Industrial',
+      area_empresa: 'Sanitaria',
+      sub_area: '-',
+      ingreso: 'Externo',
+      usuario_ingreso: 'Juan Perez',
+      icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png'
+    },
+    
+]

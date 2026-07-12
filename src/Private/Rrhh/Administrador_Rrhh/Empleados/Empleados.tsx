@@ -56,17 +56,6 @@ const Empleados = ({usuario}) => {
             
           </Route>
        </Routes>
-
-
-
-
-
-
-              
-
-        
-
-      
     </div>
   )
 }
