@@ -2,7 +2,7 @@
 
 const Ecommerce = ({usuario}) => {
   return (
-    <div>Ecommerce</div>
+    <div>pub-Ecommerce</div>
   )
 }
 

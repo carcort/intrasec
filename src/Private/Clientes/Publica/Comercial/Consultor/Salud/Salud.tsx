@@ -2,7 +2,7 @@
 
 const Salud = ({usuario}) => {
   return (
-    <div>Salud</div>
+    <div>pub-Salud</div>
   )
 }
 

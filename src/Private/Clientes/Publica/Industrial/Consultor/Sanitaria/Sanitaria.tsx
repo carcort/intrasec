@@ -2,7 +2,7 @@
 
 const Sanitaria = ({usuario}) => {
   return (
-    <div>Sanitaria</div>
+    <div>publica ------Sanitaria</div>
   )
 }
 

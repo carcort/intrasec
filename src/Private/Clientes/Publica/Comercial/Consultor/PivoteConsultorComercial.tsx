@@ -21,7 +21,7 @@ const PivoteConsultorComercial = ({usuario}) => {
     return <Navigate to={'/private/clientes/publica/comercial/consultor/banca'} replace />;
   }
    else if(area === 'Ecommerce'){
-    return <Navigate to={'/private/clientes/publica/comercial/consultor/ecommerce'} replace />;
+    return <Navigate to={'/private/clientes/publica/comecial/consultor/ecommerce'} replace />;
   }
    else if(area === 'Retail'){
     return <Navigate to={'/private/clientes/publica/comercial/consultor/retail'} replace />;

@@ -1,9 +1,11 @@
+
+
 import { Navigate } from "react-router";
 
 
 const PivotePublica = ({usuario}) => {
 
- const {estaAutenticado, division} = usuario
+ const {estaAutenticado,tipo_empresa, division, gerencia} = usuario
 
  console.log(division, estaAutenticado);
  

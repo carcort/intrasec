@@ -2,7 +2,7 @@
 
 const Transporte = ({usuario}) => {
   return (
-    <div>Transporte</div>
+    <div>publica -Transporte</div>
   )
 }
 

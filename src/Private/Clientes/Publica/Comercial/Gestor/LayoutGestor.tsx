@@ -1,10 +1,10 @@
+import { Outlet } from "react-router"
+import Sidebar from "../../../../../Components/Sidebar"
+import { dataCabeceraFiltros } from "../../../../Utils/dataCabeceraFiltros"
+import { dataSidebarIndustrial } from "../../../../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial"
 
-import { Outlet } from 'react-router'
-import { dataCabeceraFiltros } from '../../../../Utils/dataCabeceraFiltros'
-import Sidebar from '../../../../../Components/Sidebar'
-import { dataSidebarIndustrial } from '../../../../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial'
 
-const LayoutConsultor= () => {
+const LayoutGestor = () => {
   return (
     <div className="w-full h-full">
      <section className="w-full h-[7%] px-3"> 
@@ -14,7 +14,7 @@ const LayoutConsultor= () => {
                   Nuevo
                 </button>
                 <div className="  w-[50%] h-[60%] grid place-items-center">
-                  CLIENTES -consul - publicaaa
+                  CLIENTES - comer - publica - gestor
                 </div>
                 <button className=" text-white w-[14%] h-[60%] grid place-items-center cursor-pointer ">
                   <img className="w-4 h-4" src={'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png'} alt="" />
@@ -52,4 +52,4 @@ const LayoutConsultor= () => {
   )
 }
 
-export default LayoutConsultor
+export default LayoutGestor

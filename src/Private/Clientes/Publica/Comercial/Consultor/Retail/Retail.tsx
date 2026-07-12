@@ -2,7 +2,7 @@
 
 const Retail = ({usuario}) => {
   return (
-    <div>Retail</div>
+    <div>pub-Retail</div>
   )
 }
 

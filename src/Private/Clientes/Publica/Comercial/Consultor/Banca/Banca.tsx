@@ -2,7 +2,7 @@
 
 const Banca = ({usuario}) => {
   return (
-    <div>Banca</div>
+    <div>pub-Banca</div>
   )
 }
 

@@ -1,14 +1,8 @@
 import { Route, Routes } from "react-router"
-import LayoutPublica from "./LayoutPublica"
-import PivotePublica from "./PivotePublica"
 import Industrial from "./Industrial/Industrial"
 import Comercial from "./Comercial/Comercial"
-// import Industrial from "../Privada/Industrial/Industrial"
-// import Comercial from "../Privada/Comercial/Comercial"
-// import LayoutPrivada from "./LayoutPrivada"
-// import PivotePrivada from "./PivotePrivada"
-// import Industrial from "./Industrial/Industrial"
-// import Comercial from "./Comercial/Comercial"
+import LayoutPublica from "./LayoutPublica"
+import PivotePublica from "./PivotePublica"
 
 
 const Publica = ({usuario}) => {
