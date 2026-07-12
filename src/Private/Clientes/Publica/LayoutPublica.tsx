@@ -1,10 +1,11 @@
 
+
 import { Outlet } from 'react-router'
 import { dataCabeceraFiltros } from '../../Utils/dataCabeceraFiltros'
 import Sidebar from '../../../Components/Sidebar'
 import { dataSidebarIndustrial } from '../../../Components/Utils/dataSIdebar/dataSidebarCliente/dataSidebarConsultor/dataSidebarIndustria/dataSidebarIndustrial'
 
-const LayoutPrivada = () => {
+const LayoutPublica = () => {
   return (
     <div className=' w-full h-full'>
      <section className="w-full h-[7%] px-3"> 
@@ -14,7 +15,7 @@ const LayoutPrivada = () => {
                   Nuevo
                 </button>
                 <div className="  w-[50%] h-[60%] grid place-items-center">
-                  CLIENTESx
+                  CLIENTESx publica
                 </div>
                 <button className=" text-white w-[14%] h-[60%] grid place-items-center cursor-pointer ">
                   <img className="w-4 h-4" src={'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png'} alt="" />
@@ -52,4 +53,4 @@ const LayoutPrivada = () => {
   )
 }
 
-export default LayoutPrivada
+export default LayoutPublica

@@ -6,7 +6,7 @@ const PivoteClientes = ({usuario}) => {
 
  const {estaAutenticado,tipo_empresa, division, cargo, gerencia} = usuario
 
- console.log(division, estaAutenticado);
+ console.log(tipo_empresa);
  
 
 

@@ -1,11 +1,11 @@
 
 import { Outlet } from 'react-router'
 
-const LayoutIndustrial = () => {
+const LayoutConsultor= () => {
   return (
     <div className=' w-full h-full'>
      <header>
-      layout industrial - publica
+      layout consultor comercial
      </header>
      <div>
       <Outlet />
@@ -14,4 +14,4 @@ const LayoutIndustrial = () => {
   )
 }
 
-export default LayoutIndustrial
+export default LayoutConsultor
