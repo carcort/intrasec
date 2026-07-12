@@ -3,8 +3,9 @@ import LayoutRrhh from "./LayoutRrhh"
 import PivoteRrhh from "./PivoteRrhh"
 import Gerente_Rrhh from "./Gerente_Rrhh/Gerente_Rrhh"
 import Reclutador from "./Reclutador/Reclutador"
-import Administrador_Rrhh from "./Administrador_Rrhh/Administrador_Rrhh"
+//import Administrador_Rrhh from "./Administrador_Rrhh/Administrador_Rrhh"
 import Generalista_Rrhh from "./Generalista_Rrhh/Generalista_Rrhh"
+import Administrador_Rrhh from "./Administrador_Rrhh/Administrador_Rrhh"
 
 
 const Rrhh = ({usuario}) => {
