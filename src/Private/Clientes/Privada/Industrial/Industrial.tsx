@@ -8,7 +8,7 @@ import Gestor from "./Gestor/Gestor"
 const Industrial = ({usuario}) => {
   return (
     <Routes>
-          <Route path="/*" element={<LayoutIndustrial />}>
+          <Route path="/*" element={<LayoutIndustrial usuario={usuario} />}>
             <Route index element={<PivoteIndustrial usuario={usuario } />} />
             <Route path="consultor/*" element={<Consultor usuario={usuario } />} />
             <Route path="gestor/*" element={<Gestor usuario={usuario } />} />

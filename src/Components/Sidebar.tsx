@@ -9,7 +9,7 @@ const Sidebar = ({data}) => {
 
 
   return (
-    <div className="w-full h-[90%] bg-gray-50 grid  place-items-center rounded">
+    <div className="w-full h-[90%] bg-gray-100 grid  place-items-center rounded">
       <div className="w-full h-full ">
         <div className="w-full h-full grid grid-rows-12">
           {data.map((el)=>{
@@ -17,7 +17,7 @@ const Sidebar = ({data}) => {
                       to={el?.ruta} 
                       className={`flex h-full justify-center items-center rounded-md font-medium ${
                         isActive(el.ruta) 
-                          ? ' bg-gray-200' 
+                          ? '' 
                           : ''
                       }`}
                     >

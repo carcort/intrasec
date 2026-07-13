@@ -6,7 +6,7 @@ const BadgeContactos = ({el}) => {
    const navegar = useNavigate()
 
    const handleClickBadgeEmpleado=()=>{
-      navegar('/private/perfil')
+      navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto')
    }
 
   return (
@@ -33,21 +33,40 @@ const BadgeContactos = ({el}) => {
       </main>
 
       
-      <section className="w-[30%] h-full grid justify-center items-center py-12">
+      <section className="w-[30%] h-full grid grid-rows-2">
 
-            <div className={`${el.ingreso === 'Interno' ? 'text-gray-700 font-semibold': 'text-blue-700 font-semibold'}`}>
-               {el.ingreso}
-            </div>
-            {el.ingreso === 'Interno' && 
-               <div className="w-full flex gap-x-2">
-                  <div>
-                     <img className="w-5 h-5" src={el.icono_usuario} alt="" />
+            <article className="w-full h-full  ">
+                  <div className={` flex-col items-center`}>
+                     <div className="font-semibold text-gray-600">
+                        Encargado: 
+                     </div>
+                     <div className="flex gap-x-2">
+                        <div>
+                           <img className="w-4 h-4" src={el.icono_encargado} alt="" />
+                        </div>
+                        <div>
+                           {el.encargado_empresa}
+                        </div>
+                     </div>
                   </div>
-                  <div>
-                     {el.usuario_ingreso}
+            </article>
+
+            <article className="grid items-end py-7">
+                  <div className={`${el.ingreso === 'Interno' ? 'text-gray-700 font-semibold': 'text-blue-700 font-semibold'}`}>
+                     {el.ingreso}
                   </div>
-               </div>
-            }
+                  {el.ingreso === 'Interno' && 
+                     <div className={`${el.ingreso === 'Interno' ? 'text-gray-700 font-semibold': 'text-blue-700 font-semibold'} w-full flex gap-x-2`}>
+                        <div>
+                           <img className="w-5 h-5" src={el.icono_usuario} alt="" />
+                        </div>
+                        <div>
+                           {el.usuario_ingreso}
+                        </div>
+                     </div>
+                  }
+
+            </article>
 
          </section>
     </div>
