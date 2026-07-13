@@ -29,7 +29,7 @@ export const dataContactosInternos = [
     },
     {
       id: '3',
-      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nestjs.png',
+      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/pregunta.png',
       primer_nombre_contacto: 'Marcelo',
       apellido_paterno_contacto: 'Carcamo',
       apellido_materno_contacto: 'Salinas',
@@ -41,7 +41,7 @@ export const dataContactosInternos = [
     },
     {
       id: '4',
-      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/perfil2.png',
+      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png',
       primer_nombre_contacto: 'Marcelo',
       apellido_paterno_contacto: 'Carcamo',
       apellido_materno_contacto: 'Salinas',
@@ -65,7 +65,7 @@ export const dataContactosInternos = [
     },
     {
       id: '6',
-      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/perfil2.png',
+      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nestjs.png',
       primer_nombre_contacto: 'Marcelo',
       apellido_paterno_contacto: 'Carcamo',
       apellido_materno_contacto: 'Salinas',
@@ -77,7 +77,7 @@ export const dataContactosInternos = [
     },
     {
       id: '7',
-      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/perfil2.png',
+      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
       primer_nombre_contacto: 'Marcelo',
       apellido_paterno_contacto: 'Carcamo',
       apellido_materno_contacto: 'Salinas',
@@ -89,7 +89,7 @@ export const dataContactosInternos = [
     },
     {
       id: '8',
-      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/perfil2.png',
+      icono_contacto: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/logoPrincipal.png',
       primer_nombre_contacto: 'Marcelo',
       apellido_paterno_contacto: 'Carcamo',
       apellido_materno_contacto: 'Salinas',

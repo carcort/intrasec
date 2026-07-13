@@ -21,15 +21,21 @@ export const dataSidebarGestorIndustrial = [
   },
   {
      id: '4',
-     nombre: 'Permisos',
+     nombre: 'Reuniones',
      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png',
-     ruta: '/private/clientes/privada/industrial/gestor/contactos'
+     ruta: '/private/clientes/privada/industrial/gestor/reuniones'
   },
   {
      id: '5',
-     nombre: 'Vehiculos',
+     nombre: 'Permisos',
      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nestjs.png',
-     ruta: '/private/clientes/privada/industrial/gestor/contactos'
+     ruta: '/private/clientes/privada/industrial/gestor/permisos'
+  },
+  {
+     id: '6',
+     nombre: 'Vehiculos',
+     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
+     ruta: '/private/clientes/privada/industrial/gestor/vehiculos'
   },
 
 ]

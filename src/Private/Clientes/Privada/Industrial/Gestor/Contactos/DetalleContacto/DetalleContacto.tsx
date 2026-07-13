@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from "react-router"
+import { Link, Route, Routes, useNavigate } from "react-router"
 import { dataFiltroContactoInterno } from "./Utils/dataFiltroContactoInterno"
 import LayoutDetalleContacto from "./LayoutDetalleContacto"
 import PivoteDetalleContacto from "./ContactosInternos/PivoteDetalleContacto"
@@ -7,11 +7,13 @@ import VentasContactos from "./VentasContactos/VentasContactos"
 
 import FeedbackContactos from "./FeedbackContactos/FeedbackContactos"
 import FacturasContactos from "./FacturasContactos/FacturasContactos"
+import ContactoInterno from "./ContactosInternos/ContactoInterno/ContactoInterno"
 
 
 const DetalleContacto = ({usuario}) => {
 
  const navegar = useNavigate()
+ const isActive = (path) => location.pathname === path;
 
  const handleClickFiltrosDetalleContacto =(e, id, ruta)=>{
     if(id === '1'){
@@ -45,7 +47,7 @@ const DetalleContacto = ({usuario}) => {
       <div className="w-full h-[5%] flex justify-end bg-gray-100">
         filtros de aguas andina
       </div>
-      <div className="w-full h-[95%]">
+      <div className="w-full h-full">
         {/* <header className="w-full h-[8%] grid place-items-center text-lg font-semibold text-gray-600">
           Contactos: Aguas Andina
         </header> */}
@@ -85,11 +87,14 @@ const DetalleContacto = ({usuario}) => {
           </div>
 
           <div className="w-full h-[7%]  bg-gray-50">
-             <article className="w-[18%] h-full  grid grid-cols-4">
+             <article className="w-[15%] h-full  grid grid-cols-4">
                {dataFiltroContactoInterno.map((el)=>{
-               return <button onClick={(e)=>handleClickFiltrosDetalleContacto(e, el.id, el.ruta)} className="grid place-items-center cursor-pointer hover:underline">
-                {el.nombre}
-               </button>
+               return <Link
+                      to={el?.ruta} 
+                      className={`flex h-full justify-center items-center rounded-md  ${
+                        isActive(el.ruta) ? 'underline' : ''}`}>
+                      {el.nombre}
+                    </Link>
              })}
              </article>
              
@@ -100,20 +105,14 @@ const DetalleContacto = ({usuario}) => {
            <Routes>
                <Route path="/*" element={<LayoutDetalleContacto  />}>
                <Route index element={<PivoteDetalleContacto usuario={usuario } />} />
-               {/* <Route path="consultor/*" element={<Consultor usuario={usuario } />} />
-               <Route path="gestor/*" element={<Gestor usuario={usuario } />} /> */}
                <Route path="contactosInternos/*" element={<ContactosInternos />} />
                <Route path="ventasContactos/*" element={<VentasContactos />} />
                <Route path="facturasContactos/*" element={<FacturasContactos />} />
-               <Route path="feedbackContactos/*" element={<FeedbackContactos />} />
-               {/* <Route path="permisos/*" element={<Permisos />} />
-               <Route path="vehiculos/*" element={<Vehiculos />} />
+               <Route path="feedbackContactos/*" element={<FeedbackContactos />} />   
 
 
-               <Route path="contactos/detalleContacto/*" element={<DetalleContacto />} />
-               <Route path="contactos/detalleContacto/contactosInternos*" element={<ContactosInternos />} /> */}
-               
-               
+               {/* INTERNOS           */}
+               {/* <Route path="contactosInternos/contactoInterno/*" element={<ContactoInterno />} />       */}
              </Route>
        </Routes>
           </main>

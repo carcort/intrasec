@@ -17,7 +17,7 @@ const Contactos = () => {
         <header className="w-full h-[13%] grid place-items-center text-lg font-semibold text-gray-600">
           Contactos
         </header>
-        <div className="w-full h-[87%] grid grid-cols-4 grid-rows-3 gap-12 py-3">
+        <div className="w-full h-[87%] grid grid-cols-4 grid-rows-4 gap-12 ">
           {dataContactos.map((el)=>{
           return <BadgeContactos
                   el={el}

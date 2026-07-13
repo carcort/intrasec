@@ -42,23 +42,13 @@ const LayoutGestor = ({usuario}) => {
 
                       </div>
                 </section>
-                {/* <button className=" text-white  h-[60%] grid place-items-center cursor-pointer ">
-                  <img className="w-4 h-4" src={'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/config.png'} alt="" />
-                </button> */}
+          
               </div>
 
               <div className="w-[90%] h-full grid place-items-center gap-x-3">
                   <input className="border border-gray-200 w-[50%] h-[50%] " type="text" />
               </div>
-        
-
-              {/* <div className="w-[13%] h-full  flex">
-                {dataCabeceraFiltros.map((el)=>{
-                  return <button className="w-[20%] grid place-items-center cursor-pointer">
-                    <img className="w-5 h-5" src={el.icono} alt="sdds" />
-                  </button>
-                })}
-              </div> */}
+      
             </article>
             
        </section>
