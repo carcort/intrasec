@@ -141,61 +141,6 @@ export const dataContactos = [
       encargado_empresa: 'Pablo Rivas',
       icono_encargado: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
     },
-    // {
-    //   id: '11',
-    //   icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
-    //   nombre_empresa: 'Aguas Andinas',
-    //   tipo_empresa: 'Privada',
-    //   division: 'Industrial',
-    //   area_empresa: 'Energia',
-    //   sub_area: 'Generacion',
-    //   ingreso: 'Interno',
-    //   usuario_ingreso: 'Juan Perez',
-    //   icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png',
-    //   encargado_empresa: 'Pablo Rivas',
-    //   icono_encargado: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
-    // },
-    // {
-    //   id: '12',
-    //   icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
-    //   nombre_empresa: 'Aguas Andinas',
-    //   tipo_empresa: 'Privada',
-    //   division: 'Industrial',
-    //   area_empresa: 'Sanitaria',
-    //   sub_area: '-',
-    //   ingreso: 'Interno',
-    //   usuario_ingreso: 'Juan Perez',
-    //   icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png',
-    //   encargado_empresa: 'Lorenzo Osorio',
-    //   icono_encargado: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
-    // },
-    // {
-    //   id: '13',
-    //   icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
-    //   nombre_empresa: 'Colbun',
-    //   tipo_empresa: 'Privada',
-    //   division: 'Industrial',
-    //   area_empresa: 'Energia',
-    //   sub_area: 'Generacion',
-    //   ingreso: 'Interno',
-    //   usuario_ingreso: 'Juan Perez',
-    //   icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png',
-    //   encargado_empresa: 'Raul Solis',
-    //   icono_encargado: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
-    // },
-    // {
-    //   id: '14',
-    //   icono_empresa: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
-    //   nombre_empresa: 'Aguas Antofagasta',
-    //   tipo_empresa: 'Privada',
-    //   division: 'Industrial',
-    //   area_empresa: 'Sanitaria',
-    //   sub_area: '-',
-    //   ingreso: 'Externo',
-    //   usuario_ingreso: 'Juan Perez',
-    //   icono_usuario: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nextjs.png',
-    //   encargado_empresa: 'Maria Lopez',
-    //   icono_encargado: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
-    // },
+
     
 ]

@@ -1,6 +1,44 @@
+import { Route, Routes, useNavigate } from "react-router"
+import { dataFiltroContactoInterno } from "./Utils/dataFiltroContactoInterno"
+import LayoutDetalleContacto from "./LayoutDetalleContacto"
+import PivoteDetalleContacto from "./ContactosInternos/PivoteDetalleContacto"
+import ContactosInternos from "./ContactosInternos/ContactosInternos"
+import VentasContactos from "./VentasContactos/VentasContactos"
+
+import FeedbackContactos from "./FeedbackContactos/FeedbackContactos"
+import FacturasContactos from "./FacturasContactos/FacturasContactos"
 
 
-const DetalleContacto = () => {
+const DetalleContacto = ({usuario}) => {
+
+ const navegar = useNavigate()
+
+ const handleClickFiltrosDetalleContacto =(e, id, ruta)=>{
+    if(id === '1'){
+       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/contactosInternos')
+    }
+    else if(id === '2'){
+       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/ventasContactos')
+    }
+    else if(id === '3'){
+       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/facturasContactos')
+    }
+    else if(id === '4'){
+       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/feedbackContactos')
+    }
+    else {
+     console.log('asas');
+     
+    }
+ }
+
+
+  const handleClickCerrarContactosInternos =()=>{
+     navegar('/private/clientes/privada/industrial/gestor/contactos/')
+  }
+
+
+
   return (
     <div className="w-full h-full   px-4">
 
@@ -8,12 +46,12 @@ const DetalleContacto = () => {
         filtros de aguas andina
       </div>
       <div className="w-full h-[95%]">
-        <header className="w-full h-[8%] grid place-items-center text-lg font-semibold text-gray-600">
+        {/* <header className="w-full h-[8%] grid place-items-center text-lg font-semibold text-gray-600">
           Contactos: Aguas Andina
-        </header>
+        </header> */}
 
-        <main className="w-full h-[92%]  gap-12 py-3 bg-cyan-300">
-          <div className="w-full h-[20%] bg-red-400 flex">
+        <main className="w-full h-full  gap-12 py-3 ">
+          <div className="w-full h-[20%]  flex py-4">
             <div className="w-[10%] grid place-items-center">
              <img className="w-24 h-24" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/logoPrincipal.png" alt="zad" />
             </div>
@@ -46,15 +84,41 @@ const DetalleContacto = () => {
             </section>
           </div>
 
-          <div className="w-full h-[5%] bg-yellow-300">
-           filtrosss
+          <div className="w-full h-[7%]  bg-gray-50">
+             <article className="w-[18%] h-full  grid grid-cols-4">
+               {dataFiltroContactoInterno.map((el)=>{
+               return <button onClick={(e)=>handleClickFiltrosDetalleContacto(e, el.id, el.ruta)} className="grid place-items-center cursor-pointer hover:underline">
+                {el.nombre}
+               </button>
+             })}
+             </article>
+             
+
           </div>
 
-          <main className="w-full h-[65%] bg-orange-400">
-           cuerpaaa
+          <main className="w-full h-[63%] ">
+           <Routes>
+               <Route path="/*" element={<LayoutDetalleContacto  />}>
+               <Route index element={<PivoteDetalleContacto usuario={usuario } />} />
+               {/* <Route path="consultor/*" element={<Consultor usuario={usuario } />} />
+               <Route path="gestor/*" element={<Gestor usuario={usuario } />} /> */}
+               <Route path="contactosInternos/*" element={<ContactosInternos />} />
+               <Route path="ventasContactos/*" element={<VentasContactos />} />
+               <Route path="facturasContactos/*" element={<FacturasContactos />} />
+               <Route path="feedbackContactos/*" element={<FeedbackContactos />} />
+               {/* <Route path="permisos/*" element={<Permisos />} />
+               <Route path="vehiculos/*" element={<Vehiculos />} />
+
+
+               <Route path="contactos/detalleContacto/*" element={<DetalleContacto />} />
+               <Route path="contactos/detalleContacto/contactosInternos*" element={<ContactosInternos />} /> */}
+               
+               
+             </Route>
+       </Routes>
           </main>
           <section className="w-full h-[10%] flex justify-end">
-             <div className="w-[13%]  bg-cyan-400 h-full gap-x-2 flex items-center ">
+             <div className="w-[13%]   h-full gap-x-2 flex items-center ">
                 <button className="w-[75%] gap-x-3 items-center justify-center flex h-[55%] bg-violet-600 text-white cursor-pointer hover:bg-violet-700 ">
                    <div>
                     <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png" alt="as" />
@@ -63,7 +127,7 @@ const DetalleContacto = () => {
                      Crear Contacto Interno
                    </div>
                 </button>
-                <button className="w-[25%] h-[55%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
+                <button onClick={handleClickCerrarContactosInternos} className="w-[25%] h-[55%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
                      Cerrar
                 </button>
              </div>
