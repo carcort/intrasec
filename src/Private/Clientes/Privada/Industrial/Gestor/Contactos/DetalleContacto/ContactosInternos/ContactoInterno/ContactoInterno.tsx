@@ -1,12 +1,34 @@
-
+import { useNavigate } from "react-router";
 
 const ContactoInterno = () => {
-  return (
-    <div className="w-full h-full   px-4">
 
-      <div className="w-full h-[5%] flex justify-end bg-gray-100">
+  const navegar = useNavigate()
+
+
+  const handleClickBotonContactoInterno =(e)=>{
+      if(e.target.name === 'modificarContacto'){
+          navegar('/private/clientes/privada/industrial/gestor/contactos')
+      }
+      else if(e.target.name === 'eliminarContacto'){
+          navegar('/private/clientes/privada/industrial/gestor/contactos')
+      }
+      else if(e.target.name === 'cerrarContacto'){
+          navegar('/private/clientes/privada/industrial/gestor/contactos')
+      }
+      else {
+         console.log('asas');
+         
+      }
+  }
+
+
+
+  return (
+    <div className="w-full h-full   px-4 bg-orange-500">
+
+      {/* <div className="w-full h-[5%] flex justify-end bg-gray-100">
         filtros de aguas andina
-      </div>
+      </div> */}
       <div className="w-full h-full">
         {/* <header className="w-full h-[8%] grid place-items-center text-lg font-semibold text-gray-600">
           Contactos: Aguas Andina
@@ -66,8 +88,8 @@ const ContactoInterno = () => {
            asasas
           </main>
           <section className="w-full h-[10%] flex justify-end text-gray-700">
-             <div className="w-[23%]   h-full gap-x-2 flex items-center ">
-                <button className="w-[40%] gap-x-3 items-center justify-center flex h-[55%] bg-gray-50-600  cursor-pointer hover:border-b hover:border-violet-600 ">
+             <div className="w-[20%]   h-full gap-x-2 flex items-center ">
+                <button name="modificarContacto" onClick={handleClickBotonContactoInterno} className="w-[40%] gap-x-3 items-center justify-center flex h-[50%] bg-gray-50-600  cursor-pointer hover:border-b hover:border-violet-600 ">
                    <div>
                     <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/lapiz.png" alt="as" />
                    </div>
@@ -75,7 +97,7 @@ const ContactoInterno = () => {
                      Modificar Contacto 
                    </div>
                 </button>
-                <button className="w-[40%] gap-x-3 items-center justify-center flex h-[55%] bg-gray-50  cursor-pointer hover:border-b hover:border-violet-600 ">
+                <button name="eliminarContacto" onClick={handleClickBotonContactoInterno} className="w-[40%] gap-x-3 items-center justify-center flex h-[50%] bg-gray-50  cursor-pointer hover:border-b hover:border-violet-600 ">
                    <div>
                     <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/eliminar.png" alt="as" />
                    </div>
@@ -83,7 +105,7 @@ const ContactoInterno = () => {
                      Eliminar Contacto 
                    </div>
                 </button>
-                <button  className="w-[20%] h-[55%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
+                <button name="cerrarContacto" onClick={handleClickBotonContactoInterno}  className="w-[20%] h-[50%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
                      Cerrar
                 </button>
              </div>

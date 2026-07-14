@@ -8,6 +8,8 @@ import VentasContactos from "./VentasContactos/VentasContactos"
 import FeedbackContactos from "./FeedbackContactos/FeedbackContactos"
 import FacturasContactos from "./FacturasContactos/FacturasContactos"
 import ContactoInterno from "./ContactosInternos/ContactoInterno/ContactoInterno"
+import OrganigramaClientes from "./OrganigramaClientes/OrganigramaClientes"
+import CotizacionesContactos from "./CotizacionesContactos/CotizacionesContactos"
 
 
 const DetalleContacto = ({usuario}) => {
@@ -42,11 +44,11 @@ const DetalleContacto = ({usuario}) => {
 
 
   return (
-    <div className="w-full h-full   px-4">
+    <div className="w-full h-full   px-4 pt-7 ">
 
-      <div className="w-full h-[5%] flex justify-end bg-gray-100">
+      {/* <div className="w-full h-[5%] flex justify-end bg-gray-100">
         filtros de aguas andina
-      </div>
+      </div> */}
       <div className="w-full h-full">
         {/* <header className="w-full h-[8%] grid place-items-center text-lg font-semibold text-gray-600">
           Contactos: Aguas Andina
@@ -87,7 +89,7 @@ const DetalleContacto = ({usuario}) => {
           </div>
 
           <div className="w-full h-[7%]  bg-gray-50">
-             <article className="w-[15%] h-full  grid grid-cols-4">
+             <article className="w-[24%] h-full  grid grid-cols-6">
                {dataFiltroContactoInterno.map((el)=>{
                return <Link
                       to={el?.ruta} 
@@ -106,8 +108,10 @@ const DetalleContacto = ({usuario}) => {
                <Route path="/*" element={<LayoutDetalleContacto  />}>
                <Route index element={<PivoteDetalleContacto usuario={usuario } />} />
                <Route path="contactosInternos/*" element={<ContactosInternos />} />
+               <Route path="cotizacionesContactos/*" element={<CotizacionesContactos />} />
                <Route path="ventasContactos/*" element={<VentasContactos />} />
                <Route path="facturasContactos/*" element={<FacturasContactos />} />
+               <Route path="organigramaContactos/*" element={<OrganigramaClientes />} /> 
                <Route path="feedbackContactos/*" element={<FeedbackContactos />} />   
 
 
@@ -116,8 +120,8 @@ const DetalleContacto = ({usuario}) => {
              </Route>
        </Routes>
           </main>
-          <section className="w-full h-[10%] flex justify-end">
-             <div className="w-[13%]   h-full gap-x-2 flex items-center ">
+          <section className="w-full h-[10%] flex justify-end ">
+             <div className="w-[13%]   h-full gap-x-2 flex items-end ">
                 <button className="w-[75%] gap-x-3 items-center justify-center flex h-[55%] bg-violet-600 text-white cursor-pointer hover:bg-violet-700 ">
                    <div>
                     <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png" alt="as" />
