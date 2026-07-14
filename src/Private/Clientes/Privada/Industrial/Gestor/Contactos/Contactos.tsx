@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router"
 import BadgeContactos from "./Components/BadgeContactos"
 
 import { dataContactos } from "./Utils/dataContactos"
-import Modal from "../../../../../../Components/Modal"
 import ModalEmpleadoCompetencias from "../../../../../../Components/ModalEmpleadoCompetencias"
 import ModalContacto from "./ModalContacto"
 

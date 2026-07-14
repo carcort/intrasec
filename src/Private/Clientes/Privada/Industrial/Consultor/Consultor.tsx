@@ -10,12 +10,17 @@ import Transporte from "./Transporte/Transporte"
 const Consultor = ({usuario}) => {
   return (
     <Routes>
-          <Route path="/*" element={<LayoutConsultor />}>
+          <Route path="/*" element={<LayoutConsultor usuario={usuario} />}>
             <Route index element={<PivoteConsultor usuario={usuario } />} />
             <Route path="energia/*" element={<Energia usuario={usuario } />} />
             <Route path="sanitaria/*" element={<Sanitaria usuario={usuario } />} />
             <Route path="telecomunicaciones/*" element={<Telecomunicaciones usuario={usuario } />} />
             <Route path="transporte/*" element={<Transporte usuario={usuario } />} />
+
+
+
+            {/* INTERNAS */}
+            {/* <Route path="energia/*" element={<Transporte usuario={usuario } />} /> */}
           </Route>
        </Routes>
   )

@@ -25,23 +25,28 @@ const LayoutGestor = ({usuario}) => {
                   Contacto
                 </button>
 
-                <section className=" w-[50%] h-[50%] flex gap-x-3">
+                <section className=" w-[70%] h-[50%] flex gap-x-3">
                       <article className=" flex items-center justify-center">
                         <img className="w-7 h-7" src={usuario.icono} alt="s" />
                       </article> 
-                      <div className="w-[60%]  h-[50%]  flex-col    text-violet-600 ">
+                      <div className="w-[75%]  h-[50%]  flex-col    text-violet-600 ">
                         
                         <article className="w-full flex justify-center gap-x-1">
                           <div className="">
-                            {usuario.primer_nombre}
+                            {usuario?.primer_nombre}
                           </div> 
                           <div className="">
-                            {usuario.apellido_paterno}
+                            {usuario?.apellido_paterno}
                           </div>
                         </article>
-                        <div className=" w-full  h-[50%] grid justify-center text-gray-700 text-[10px]">
-                          {usuario.cargo}
-                        </div>
+                        <article className="w-full flex justify-center gap-x-1 text-[10px] text-gray-700 ">
+                          <div className="">
+                            {usuario?.cargo}
+                          </div> 
+                          <div className="">
+                            {usuario?.division}
+                          </div>
+                        </article>
 
                       </div>
                 </section>

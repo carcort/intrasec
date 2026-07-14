@@ -18,8 +18,8 @@ const Private = () => {
     id: '1',
     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
     estaAutenticado:true,
-    primer_nombre: 'Jorge',
-    apellido_paterno: 'Salazar',
+    primer_nombre: 'Camilo',
+    apellido_paterno: 'Olmedo',
     apellido_materno: 'Barraza',
     telefono_laboral: '+5698664642',
     email_laboral: 'juan_perez@intrasec.com',
@@ -29,8 +29,8 @@ const Private = () => {
     tipo_empresa: 'Privada',
     division: 'Industrial',
     //cargo: 'Administrador_Rrhh',
-    cargo: 'Gestor',
-    area: 'Salud',
+    cargo: 'Consultor',
+    area: 'Energia',
     sub_area: '',
   }
 
