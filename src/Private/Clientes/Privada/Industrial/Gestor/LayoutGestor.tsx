@@ -1,14 +1,17 @@
-import { Outlet } from "react-router"
+import { Outlet, useNavigate } from "react-router"
 import Sidebar from "../../../../../Components/Sidebar"
 
 import { dataSidebarGestorIndustrial } from "./Utils/dataSidebarGestorIndustrial"
 
 
+
 const LayoutGestor = ({usuario}) => {
+
+  const navegar = useNavigate()
 
 
   const handleClickAbrirModalNuevoContacto =()=>{
-      console.log('nuevooo');
+      navegar('/private/clientes/privada/industrial/gestor/contactos/crearContacto')
       
   } 
 
@@ -64,6 +67,9 @@ const LayoutGestor = ({usuario}) => {
               <Outlet />
          </div>
        </main>
+
+
+       
     </div>
   )
 }

@@ -1,8 +1,12 @@
-import { useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
+import { dataFiltroContactoInterno } from "./Utils/dataFiltroContactoInterno";
+//import { dataFiltroContactoInterno, dataFiltroContactosInternos } from "../../Utils/dataFiltroContactosInternos";
 
 const ContactoInterno = () => {
 
   const navegar = useNavigate()
+  const location = useLocation();
+ const isActive = (path) => location.pathname === path;
 
 
   const handleClickBotonContactoInterno =(e)=>{
@@ -69,16 +73,15 @@ const ContactoInterno = () => {
           </div>
 
           <div className="w-full h-[7%]  bg-gray-50">
-             <article className="w-[15%] h-full  grid grid-cols-4">
-               {/* {dataFiltroContactoInterno.map((el)=>{
+             <article className="w-[24%] h-full  grid grid-cols-6">
+               {dataFiltroContactoInterno.map((el)=>{
                return <Link
                       to={el?.ruta} 
                       className={`flex h-full justify-center items-center rounded-md  ${
-                        isActive(el.ruta) ? 'underline' : ''}`}>
+                        isActive(el?.ruta) ? 'underline underline-offset-[5px] decoration-violet-500' : ''}`}>
                       {el.nombre}
                     </Link>
-             })} */}
-             algo
+             })}
              </article>
              
 

@@ -24,7 +24,7 @@ const Tabla = ({data}) => {
         </thead>
         <tbody>
           {data.map((el) => (
-            <tr key={el.id} className="bg-white border-b hover:bg-gray-50">
+            <tr key={el.id} className="bg-white border-b border-gray-300 hover:bg-gray-50">
               <th scope="row" className="px-6 py-4   ">
                 {el.numero_cotizacion}
               </th>

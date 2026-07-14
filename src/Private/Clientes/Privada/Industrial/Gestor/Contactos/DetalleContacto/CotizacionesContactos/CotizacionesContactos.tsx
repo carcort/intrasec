@@ -5,7 +5,7 @@ import { dataCotizacionesContactos } from "./Utils/dataCotizacionesContactos"
 const CotizacionesContactos = ({usuario}) => {
   return (
     <div className="w-full h-full  ">
-      <div className="w-full h-[10%] bg-red-300 flex ">
+      <div className="w-full h-[10%] bg-orange-300 flex ">
         <div className="h-full w-[7%] gap-x-3 grid items-center">
           {usuario.cargo === 'Consultor' ? 
             <button className="w-[75%] gap-x-3 items-center justify-center flex h-[65%] bg-violet-500 rounded text-white cursor-pointer hover:bg-violet-700 ">
@@ -28,7 +28,7 @@ const CotizacionesContactos = ({usuario}) => {
             Buscar: <input className="w-full h-[60%] border border-gray-200" type="text" />
           </div>
           <div className="h-full w-[20%] flex items-center">
-            filtros
+            filtros cotizaciones
           </div>
         </div>
       </div>

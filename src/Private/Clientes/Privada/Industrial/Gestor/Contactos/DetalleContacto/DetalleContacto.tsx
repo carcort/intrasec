@@ -1,5 +1,5 @@
 import { Link, Route, Routes, useLocation, useNavigate } from "react-router"
-import { dataFiltroContactoInterno } from "./Utils/dataFiltroContactoInterno"
+import {  dataFiltroContactosInternos } from "./Utils/dataFiltroContactosInternos"
 import LayoutDetalleContacto from "./LayoutDetalleContacto"
 import PivoteDetalleContacto from "./ContactosInternos/PivoteDetalleContacto"
 import ContactosInternos from "./ContactosInternos/ContactosInternos"
@@ -91,7 +91,7 @@ const DetalleContacto = ({usuario}) => {
 
           <div className="w-full h-[7%]  bg-gray-50">
              <article className="w-[24%] h-full  grid grid-cols-6">
-               {dataFiltroContactoInterno.map((el)=>{
+               {dataFiltroContactosInternos.map((el)=>{
                return <Link
                       to={el?.ruta} 
                       className={`flex h-full justify-center items-center rounded-md  ${
@@ -119,7 +119,7 @@ const DetalleContacto = ({usuario}) => {
                {/* INTERNOS           */}
                {/* <Route path="contactosInternos/contactoInterno/*" element={<ContactoInterno />} />       */}
              </Route>
-       </Routes>
+          </Routes>
           </main>
           <section className="w-full h-[9%] flex justify-end ">
              <div className="w-[11%]   h-full gap-x-2 flex items-end ">

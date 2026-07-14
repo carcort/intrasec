@@ -1,6 +1,6 @@
 
 
-export const dataFiltroContactoInterno = [
+export const dataFiltroContactosInternos = [
  {
      id: '1',
      nombre: 'Contactos',

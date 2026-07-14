@@ -1,8 +1,12 @@
 
 
+import { Route, Routes } from "react-router"
 import BadgeContactos from "./Components/BadgeContactos"
 
 import { dataContactos } from "./Utils/dataContactos"
+import Modal from "../../../../../../Components/Modal"
+import ModalEmpleadoCompetencias from "../../../../../../Components/ModalEmpleadoCompetencias"
+import ModalContacto from "./ModalContacto"
 
 
 
@@ -40,6 +44,25 @@ const Contactos = () => {
                   </div>
               </div>
         </section>
+
+        <Routes>
+               <Route path="crearContacto/*" element={<ModalContacto  />}>
+               {/* <Route index element={<ModalEmpleadoCompetencias />} /> */}
+               <Route path="otro/*" element={<ModalEmpleadoCompetencias />} />
+               {/* <Route path="contactosInternos/*" element={<ContactosInternos />} />
+               <Route path="cotizacionesContactos/*" element={<CotizacionesContactos usuario={usuario} />} />
+               <Route path="ventasContactos/*" element={<VentasContactos />} />
+               <Route path="facturasContactos/*" element={<FacturasContactos usuario={usuario} />} />
+               <Route path="organigramaContactos/*" element={<OrganigramaClientes />} /> 
+               <Route path="feedbackContactos/*" element={<FeedbackContactos />} />    */}
+
+
+               {/* INTERNOS           */}
+               {/* <Route path="contactosInternos/contactoInterno/*" element={<ContactoInterno />} />       */}
+             </Route>
+          </Routes>
+
+        
     </div>
   )
 }
