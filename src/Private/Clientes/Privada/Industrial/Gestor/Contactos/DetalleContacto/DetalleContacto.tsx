@@ -1,4 +1,4 @@
-import { Link, Route, Routes, useNavigate } from "react-router"
+import { Link, Route, Routes, useLocation, useNavigate } from "react-router"
 import { dataFiltroContactoInterno } from "./Utils/dataFiltroContactoInterno"
 import LayoutDetalleContacto from "./LayoutDetalleContacto"
 import PivoteDetalleContacto from "./ContactosInternos/PivoteDetalleContacto"
@@ -7,7 +7,7 @@ import VentasContactos from "./VentasContactos/VentasContactos"
 
 import FeedbackContactos from "./FeedbackContactos/FeedbackContactos"
 import FacturasContactos from "./FacturasContactos/FacturasContactos"
-import ContactoInterno from "./ContactosInternos/ContactoInterno/ContactoInterno"
+
 import OrganigramaClientes from "./OrganigramaClientes/OrganigramaClientes"
 import CotizacionesContactos from "./CotizacionesContactos/CotizacionesContactos"
 
@@ -15,26 +15,27 @@ import CotizacionesContactos from "./CotizacionesContactos/CotizacionesContactos
 const DetalleContacto = ({usuario}) => {
 
  const navegar = useNavigate()
+ const location = useLocation();
  const isActive = (path) => location.pathname === path;
 
- const handleClickFiltrosDetalleContacto =(e, id, ruta)=>{
-    if(id === '1'){
-       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/contactosInternos')
-    }
-    else if(id === '2'){
-       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/ventasContactos')
-    }
-    else if(id === '3'){
-       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/facturasContactos')
-    }
-    else if(id === '4'){
-       navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/feedbackContactos')
-    }
-    else {
-     console.log('asas');
+//  const handleClickFiltrosDetalleContacto =(e, id, ruta)=>{
+//     if(id === '1'){
+//        navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/contactosInternos')
+//     }
+//     else if(id === '2'){
+//        navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/ventasContactos')
+//     }
+//     else if(id === '3'){
+//        navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/facturasContactos')
+//     }
+//     else if(id === '4'){
+//        navegar('/private/clientes/privada/industrial/gestor/contactos/detalleContacto/feedbackContactos')
+//     }
+//     else {
+//      console.log('asas');
      
-    }
- }
+//     }
+//  }
 
 
   const handleClickCerrarContactosInternos =()=>{
@@ -94,7 +95,7 @@ const DetalleContacto = ({usuario}) => {
                return <Link
                       to={el?.ruta} 
                       className={`flex h-full justify-center items-center rounded-md  ${
-                        isActive(el.ruta) ? 'underline' : ''}`}>
+                        isActive(el?.ruta) ? 'underline underline-offset-[5px] decoration-violet-500' : ''}`}>
                       {el.nombre}
                     </Link>
              })}
@@ -103,14 +104,14 @@ const DetalleContacto = ({usuario}) => {
 
           </div>
 
-          <main className="w-full h-[63%] ">
+          <main className="w-full h-[64%] ">
            <Routes>
                <Route path="/*" element={<LayoutDetalleContacto  />}>
                <Route index element={<PivoteDetalleContacto usuario={usuario } />} />
                <Route path="contactosInternos/*" element={<ContactosInternos />} />
-               <Route path="cotizacionesContactos/*" element={<CotizacionesContactos />} />
+               <Route path="cotizacionesContactos/*" element={<CotizacionesContactos usuario={usuario} />} />
                <Route path="ventasContactos/*" element={<VentasContactos />} />
-               <Route path="facturasContactos/*" element={<FacturasContactos />} />
+               <Route path="facturasContactos/*" element={<FacturasContactos usuario={usuario} />} />
                <Route path="organigramaContactos/*" element={<OrganigramaClientes />} /> 
                <Route path="feedbackContactos/*" element={<FeedbackContactos />} />   
 
@@ -120,17 +121,17 @@ const DetalleContacto = ({usuario}) => {
              </Route>
        </Routes>
           </main>
-          <section className="w-full h-[10%] flex justify-end ">
-             <div className="w-[13%]   h-full gap-x-2 flex items-end ">
-                <button className="w-[75%] gap-x-3 items-center justify-center flex h-[55%] bg-violet-600 text-white cursor-pointer hover:bg-violet-700 ">
+          <section className="w-full h-[9%] flex justify-end ">
+             <div className="w-[11%]   h-full gap-x-2 flex items-end ">
+                <button className="w-[70%] gap-x-3 items-center justify-center flex h-[55%] bg-violet-600 text-white cursor-pointer hover:bg-violet-700 ">
                    <div>
                     <img className="w-5 h-5" src="https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png" alt="as" />
                    </div>
                    <div className="font-semibold">
-                     Crear Contacto Interno
+                     Contacto Interno
                    </div>
                 </button>
-                <button onClick={handleClickCerrarContactosInternos} className="w-[25%] h-[55%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
+                <button onClick={handleClickCerrarContactosInternos} className="w-[30%] h-[55%] bg-gray-800 text-white cursor-pointer hover:bg-black font-semibold">
                      Cerrar
                 </button>
              </div>

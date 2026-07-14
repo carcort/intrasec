@@ -1,8 +1,9 @@
-import { dataCotizacionesContactos } from "../Private/Clientes/Privada/Industrial/Gestor/Contactos/DetalleContacto/CotizacionesContactos/Utils/dataCotizacionesContactos"
+import { Link } from "react-router"
+//import { dataCotizacionesContactos } from "../Private/Clientes/Privada/Industrial/Gestor/Contactos/DetalleContacto/CotizacionesContactos/Utils/dataCotizacionesContactos"
 //import { dataContactosInternos } from "../Private/Clientes/Privada/Industrial/Gestor/Contactos/DetalleContacto/Utils/dataContactosInternos"
 
 
-const Tabla = () => {
+const Tabla = ({data}) => {
   return (
     <div className="w-full h-[95%] ">
      <table className="w-full  text-left ">
@@ -22,7 +23,7 @@ const Tabla = () => {
           </tr>
         </thead>
         <tbody>
-          {dataCotizacionesContactos.map((el) => (
+          {data.map((el) => (
             <tr key={el.id} className="bg-white border-b hover:bg-gray-50">
               <th scope="row" className="px-6 py-4   ">
                 {el.numero_cotizacion}
@@ -39,15 +40,16 @@ const Tabla = () => {
               <td className="px-6 py-4">{el.estado_cotizacion === 'Enviada' ? el.fecha_envio_cotizacion: '-'}</td>
               <td className="px-6 py-4">
                 <span className={`w-[60%] px-2 py-1 grid place-items-center font-semibold rounded ${
-                  el.estado_cotizacion === 'Enviada' ? 'bg-violet-500 text-white' : 'bg-yellow-500 text-white'}`}>
+                  el.estado_cotizacion === 'Enviada' ? ' text-violet-600' : 'text-yellow-400'}`}>
                   {el.estado_cotizacion}
                 </span>
               </td>
               <td className="px-6 py-4">
-                <a href="#" className="font-medium text-blue-600 hover:underline">Descargar</a>
+                <a href="#" className="font-semibold text-blue-600 hover:underline">Descargar</a>
               </td>
+              
               <td  className="px-6 py-4  text-white grid place-items-center ">
-                {el.estado_cotizacion !== 'Enviada' ? <a href="#" className="bg-green-500 text-white cursor-pointer h-full w-[90%]  font-semibold">Enviar</a>: ''}
+                {el.estado_cotizacion !== 'Enviada' ? <Link to="#" className="bg-green-500 text-white cursor-pointer h-[25px] w-[95%] grid place-items-center  font-semibold">Enviar</Link>: ''}
               </td>
             </tr>
           ))}

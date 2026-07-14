@@ -15,9 +15,9 @@ const Sidebar = ({data}) => {
           {data.map((el)=>{
             return <Link
                       to={el?.ruta} 
-                      className={`flex h-full justify-center items-center rounded-md hover:bg-gray-200 ${
+                      className={`flex h-full justify-center items-center rounded-md hover:bg-violet-200 ${
                         isActive(el.ruta) 
-                          ? '' 
+                          ? 'bg-violet-200' 
                           : ''
                       }`}
                     >
