@@ -68,9 +68,9 @@ const FormNuevaReunion = () => {
                <label className="w-full h-[50%]" htmlFor="">Tipo de Reunion</label>
                <input value={selectTipoReunion} onClick={handleClickTipoReunion} className="mt-2 cursor-pointer w-full h-[40%] border border-gray-200 pl-2" placeholder={selectTipoReunion} type="text" />
                {activarTipoReunion && 
-                <div className="absolute bg-red-400 w-[300px] h-[100px] grid grid-rows-2">
+                <div className="absolute bg-gray-100 w-[500px] h-[70px] grid grid-rows-2">
                   {tipoReunion.map((el)=>{
-                    return <button onClick={(e)=>handleClickInputTipoReunion(e, el.id)} className="hover:bg-gray-300 cursor-pointer" >
+                    return <button onClick={(e)=>handleClickInputTipoReunion(e, el.id)} className="hover:bg-gray-300 cursor-pointer border border-violet-200" >
                        {el.nombre}
                    </button>
                   })}                  

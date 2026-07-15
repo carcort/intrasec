@@ -1,4 +1,5 @@
 import Tabla from "../../../../../../../../Components/Tabla"
+import { dataContactosInternos } from "../Utils/dataContactosInternos"
 import { dataFacturasContactos } from "./Utils/dataFacturasContactos"
 
 
@@ -33,9 +34,25 @@ const FacturasContactos = ({usuario}) => {
         </div>
       </div>
       <div className="w-full h-[90%] grid place-items-center">
-        <Tabla
-          data={dataFacturasContactos}
-        />
+        
+        {dataFacturasContactos.length > 0 ? 
+            <Tabla
+              data={dataFacturasContactos}
+            />: 
+
+            <div className="w-full h-full grid place-items-center ">
+              <section className="w-[15%] h-[20%]  grid grid-rows-2 "> 
+                <section className="w-full flex justify-center text-lg font-semibold text-gray-600 items-center">
+                  Aún No Hay Facturas 
+                </section>
+                <div className="flex justify-center">
+                  <button className="bg-violet-500 text-white font-semibold w-[95%]  cursor-pointer hover:bg-violet-600">
+                    Crear Factura
+                  </button>
+                </div>
+              </section>
+        </div>
+      }
       </div>
     </div>
   )
