@@ -21,7 +21,7 @@ const LayoutConsultor= ({usuario}) => {
      <section className="w-full h-[7%] px-3"> 
             <article className="flex h-full justify-between">
               <div className="flex w-[10%] h-full  items-center font-semibold gap-x-3">
-                <button onClick={handleClickAbrirModalNuevoContacto} className="flex w-[50%] gap-x-2 bg-violet-500 text-white  items-center justify-center h-[50%] hover:bg-violet-600 cursor-pointer rounded ">
+                <button onClick={handleClickAbrirModalNuevoContacto} className="flex w-[55%] gap-x-2 bg-violet-500 text-white  items-center justify-center h-[50%] hover:bg-violet-600 cursor-pointer rounded ">
                   <img className="w-4 h-4" src='https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png' alt="sd" />
                   Contacto
                 </button>

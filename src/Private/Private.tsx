@@ -29,7 +29,7 @@ const Private = () => {
     tipo_empresa: 'Privada',
     division: 'Industrial',
     //cargo: 'Administrador_Rrhh',
-    cargo: 'Consultor',
+    cargo: 'Gestor',
     area: 'Energia',
     sub_area: '',
   }
