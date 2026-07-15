@@ -9,7 +9,7 @@ const ReunionesExternas = () => {
  const myEventsList = [{}]
 
   return (
-    <div className='w-[95%] h-[90%] bg-green-500'>
+    <div className='w-full h-[90%] '>
                   <Calendar
                     localizer={localizer}
                     events={myEventsList}
