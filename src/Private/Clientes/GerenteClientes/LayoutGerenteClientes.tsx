@@ -11,7 +11,7 @@ const LayoutGerenteClientes = ({usuario}) => {
               <div className="flex w-[10%] h-full  items-center font-semibold gap-x-3">
                 <button className="flex w-[55%] gap-x-2 bg-violet-500 text-white  items-center justify-center h-[50%] hover:bg-violet-600 cursor-pointer rounded ">
                   <img className="w-4 h-4" src='https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/mas.png' alt="sd" />
-                  Home
+                  Equipo
                 </button>
 
                 <section className=" w-[70%] h-[50%] flex gap-x-3">

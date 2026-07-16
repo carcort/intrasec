@@ -69,6 +69,9 @@ const Sidebar = ({data}) => {
     }
  }
 
+ //console.log('datitos:', data);
+ 
+
 
   return (
     <div className="w-full h-[90%] bg-gray-100 grid  place-items-center rounded">
@@ -91,32 +94,32 @@ const Sidebar = ({data}) => {
 
                     {mostrarCartel1 &&
                       <div className="ml-24 mt-3 fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce">
-                        Contactos
+                        {data[0].nombre}
                       </div>
                     }
                     {mostrarCartel2 &&
                       <div className="ml-24 mt-24 fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce ">
-                        Recientes
+                        {data[1].nombre}
                       </div>
                     }
                     {mostrarCartel3 &&
                       <div className="ml-24 mt-44 fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce">
-                        Favoritos
+                        {data[2].nombre}
                       </div>
                     }
                     {mostrarCartel4 &&
                       <div className="ml-24 mt-64 fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce">
-                        Reuniones
+                        {data[3].nombre}
                       </div>
                     }
                     {mostrarCartel5 &&
                       <div className="ml-24  mt-[21rem] fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce">
-                        Permisos
+                        {data[4].nombre}
                       </div>
                     }
                     {mostrarCartel6 &&
                       <div className="ml-24 mt-[26rem] fixed pl-1 py-2 w-[3%] h-[3%]  bg-violet-500 items-center text-white font-semibold text-[10px] animate-bounce">
-                        Vehiculos
+                        {data[5].nombre}
                       </div>
                     }
                     
