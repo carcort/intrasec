@@ -10,19 +10,19 @@ export const dataSidebarGerenteClientes = [
   {
      id: '2',
      nombre: 'Recientes',
-     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nestjs.png',
+     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/reloj.png',
      ruta: '/private/clientes/gerenteClientes/recientes'
   },
   {
      id: '3',
      nombre: 'Favoritos',
-     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
+     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
      ruta: '/private/clientes/gerenteClientes/favoritos'
   },
   {
      id: '4',
      nombre: 'Industrial',
-     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/lapiz.png',
+     icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
      ruta: '/private/clientes/gerenteClientes/industrial'
   },
   {

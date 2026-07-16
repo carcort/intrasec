@@ -4,6 +4,8 @@ import PivoteClientes from "./PivoteClientes"
 import Publica from "./Publica/Publica"
 import Privada from "./Privada/Privada"
 import GerenteClientes from "./GerenteClientes/GerenteClientes"
+import TeamLeader from "./TeamLeader/TeamLeader"
+import LayoutGerenteClientes from "./GerenteClientes/LayoutGerenteClientes"
 
 
 const Clientes = ({usuario}) => {
@@ -15,6 +17,7 @@ const Clientes = ({usuario}) => {
             <Route path="publica/*" element={<Publica usuario={usuario } />} />
 
             <Route path="gerenteClientes/*" element={<GerenteClientes usuario={usuario } />} />
+            <Route path="teamLeader/*" element={<TeamLeader usuario={usuario } />} />
           </Route>
        </Routes>
   )

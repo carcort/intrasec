@@ -18,6 +18,10 @@ const PivoteClientes = ({usuario}) => {
     return <Navigate to={'/private/clientes/gerenteClientes'} replace />;
   }
 
+  if(gerencia === 'Clientes' && cargo === 'TeamLeader'){
+    return <Navigate to={'/private/clientes/teamLeader'} replace />;
+  }
+
 
   if(tipo_empresa === 'Privada'){
     return <Navigate to={'/private/clientes/privada'} replace />;
