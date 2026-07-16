@@ -10,7 +10,7 @@ const FormularioEmpleado = ({titulo1, titulo2, data1, data2}) => {
           <header className="w-full h-[10%] grid place-items-center">
             {titulo1}
           </header>
-          <main className="w-full h-[90%] grid grid-rows-6">
+          <main className="w-full h-[90%] grid grid-rows-6 ">
             {data1.map((el)=>{
              return  <BadgeFormularioEmpleado
                 el={el}

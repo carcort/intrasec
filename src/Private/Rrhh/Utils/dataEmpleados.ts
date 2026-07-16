@@ -89,4 +89,38 @@ export const dataEmpleados = [
       area: 'Energia',
       cargo: 'Consultor'
     },
+
+    {
+      id: '9',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nodejs.png',
+      primer_nombre: 'Oscar',
+      apellido_paterno: 'Calderon',
+      apellido_materno: 'Robles',
+      gerencia: 'Clientes',
+      division: 'Industrial',
+      area: 'Energia',
+      cargo: 'Consultor'
+    },
+    {
+      id: '10',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/pregunta.png',
+      primer_nombre: 'Amanda',
+      apellido_paterno: 'Cortes',
+      apellido_materno: 'Bravo',
+      gerencia: 'Finanzas',
+      division: 'Industrial',
+      area: 'Energia',
+      cargo: 'Consultor'
+    },
+    {
+      id: '11',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/star.png',
+      primer_nombre: 'Amparo',
+      apellido_paterno: 'Alvarez',
+      apellido_materno: 'Zapata',
+      gerencia: 'Tecnico',
+      division: 'Industrial',
+      area: 'Energia',
+      cargo: 'Consultor'
+    },
 ]

@@ -1,43 +1,51 @@
+import { dataModalEmpleadoLaboralGerencia } from "../../../Components/Utils/dataModalEmpleadoGerencia";
+import { dataModalEmpleadoLaboralIsapre } from "../../../Components/Utils/dataModalEmpleadoLaboralIsapre";
 
 
 
 
 export const dataBadgeEmpleadoLaboralArea = [
    {
-      id: '1',
+      id: '7',
       titulo: 'Gerencia *',
       placeHolder: 'Clientes, Finanzas, Etc.',
-      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png',
+      data: dataModalEmpleadoLaboralGerencia
      
    },
    {
-      id: '2',
-      titulo: 'Gerente Encargado ',
+      id: '8',
+      titulo: 'Gerente Encargado',
       placeHolder: 'Jorge Lopez...',
-      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png'
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png',
+      data: []
    },
    {
-      id: '3',
+      id: '9',
       titulo: 'Cargo *',
       placeHolder: 'Gestor, Consultor, Gestor Legal...',
-      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png'
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
+      data: dataModalEmpleadoLaboralIsapre
    },
    {
-      id: '4',
-      titulo: 'Supervisor Directo ',
-      placeHolder: 'Pedro Rivas',
-      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png'
+      id: '10',
+      titulo: 'Equipo al que va a Pertenecer',
+      placeHolder: 'Team 1',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png',
+      data: dataModalEmpleadoLaboralIsapre
    },
 
    {
-      id: '5',
+      id: '11',
       titulo: 'Fecha Legal de inicio del Contrato del Empleado *',
       placeHolder: '19-08-2026',
+      data: []
    },
    {
-      id: '6',
-      titulo: 'Forma de Trabajo estblecida *',
+      id: '12',
+      titulo: 'Forma de Trabajo establecida *',
       placeHolder: 'Presencial / Mixto / Virtual',
+      data: dataModalEmpleadoLaboralIsapre
    }
 
 ]

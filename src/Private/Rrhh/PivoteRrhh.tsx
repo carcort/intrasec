@@ -1,11 +1,9 @@
-
-
 import { Navigate } from "react-router";
 
 
 const PivoteRrhh = ({usuario}) => {
 
- const {estaAutenticado,tipo_empresa, division, cargo, gerencia} = usuario
+ const {estaAutenticado,division, cargo} = usuario
 
  console.log(division, estaAutenticado);
  

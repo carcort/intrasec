@@ -54,9 +54,9 @@ const Modal = () => {
                  {dataCabeceraModal.map((el)=>{
                   return <Link
                       to={el?.ruta} 
-                      className={`flex h-full justify-center items-center rounded-md font-medium ${
+                      className={`flex h-full justify-center items-center rounded-md  ${
                         isActive(el.ruta) 
-                          ? 'border-b-2 border-violet-300' 
+                          ? 'underline underline-offset-4 decoration-violet-500' 
                           : ''
                       }`}
                     >
