@@ -1,3 +1,4 @@
+import { dataModalEmpleadoLaboralAfp } from "../../../Components/Utils/dataModalEmpleadoLaboralAfp";
 import { dataModalEmpleadoLaboralIsapre } from "../../../Components/Utils/dataModalEmpleadoLaboralIsapre";
 
 
@@ -32,7 +33,7 @@ export const dataBadgeEmpleadoLaboral = [
       id: '5',
       titulo: 'AFP *',
       placeHolder: 'Habitat, Cuprum, Etc.',
-      data: dataModalEmpleadoLaboralIsapre
+      data: dataModalEmpleadoLaboralAfp
    },
    {
       id: '6',

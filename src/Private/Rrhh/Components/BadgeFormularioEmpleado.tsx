@@ -45,67 +45,100 @@ const BadgeFormularioEmpleado = ({el}) => {
   }
 
   return (
-    <section className="w-full h-full ">
+    <section className="w-full h-full relative">
         <div className="w-full h-full ">
           <label  htmlFor="">{titulo}</label>
           <input id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
         </div>
 
+        {/* <div className=" bg-cyan-500">
+          
+        </div> */}
         {abrirListaAfp && 
-          <section className="grid grid-rows-7 -mt-8 w-[36%]  bg-gray-50 fixed max-h-[100px] overflow-auto ">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40 ">
             {data.map((el)=>{
-              return <button className="w-full h-[50px]  bg-gray-50 hover:bg-gray-100 cursor-pointer">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })}
           </section>
         }
 
         {abrirListaIsapres && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
             {data.map((el)=>{
-              return <button className="w-full h-[90%] bg-gray-50">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })}
           </section>
         }
 
         {abrirListaGerencia && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
             {data.map((el)=>{
-              return <button className="w-full h-[90%] bg-gray-50">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })}
           </section>
         }
 
         {abrirListaCargo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
             {data.map((el)=>{
-              return <button className="w-full h-[90%] bg-gray-50">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })} 
           </section>
         }
 
         {abrirListaEquipo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
             {data.map((el)=>{
-              return <button className="w-full h-[90%] bg-gray-50">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })}
           </section>
         }
 
         {abrirListaTrabajo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50">
+          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
             {data.map((el)=>{
-              return <button className="w-full h-[90%] bg-gray-50">
-                {el.nombre}
+              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[5%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[95%] flex justify-start">
+                  {el.nombre}
+                </div>
               </button>
             })}
           </section>

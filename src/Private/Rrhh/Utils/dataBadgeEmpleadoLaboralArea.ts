@@ -1,3 +1,4 @@
+import { dataModalEmpleadoCargo } from "../../../Components/Utils/dataModalEmpleadoCargo";
 import { dataModalEmpleadoLaboralGerencia } from "../../../Components/Utils/dataModalEmpleadoGerencia";
 import { dataModalEmpleadoLaboralIsapre } from "../../../Components/Utils/dataModalEmpleadoLaboralIsapre";
 
@@ -25,7 +26,7 @@ export const dataBadgeEmpleadoLaboralArea = [
       titulo: 'Cargo *',
       placeHolder: 'Gestor, Consultor, Gestor Legal...',
       icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
-      data: dataModalEmpleadoLaboralIsapre
+      data: dataModalEmpleadoCargo
    },
    {
       id: '10',
