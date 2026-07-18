@@ -18,8 +18,7 @@ const FormularioEmpleadoLaboral = ({titulo1,  data1}) => {
             {data1.map((el)=>{
              return  <BadgeFormularioEmpleado
                 el={el}
-                // valorGerente={valorGerente}
-                // valorAfp={valorAfp}
+                
              />
             })}
           </main>

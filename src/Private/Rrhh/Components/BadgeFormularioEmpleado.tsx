@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTrabajo } from "../../../Store/formEmpleadoLaboralStore";
+import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTelefono1Corporativo, useTelefono2Corporativo, useTrabajo } from "../../../Store/formEmpleadoLaboralStore";
 //import { useGerentes } from "../../../Store/gerentesStore";
 
 
@@ -14,12 +14,17 @@ const BadgeFormularioEmpleado = ({el}) => {
   const ValorIsapre = useIsapre((state) => state.isapre)
   const ValorTrabajo = useTrabajo((state) => state.trabajo)
   const ValorEmailCorporativo = useEmailCorporativo((state) => state.emailCorporativo)
+  const ValorTelefono1Corporativo = useTelefono1Corporativo((state) => state.telefono1Corporativo)
+  const ValorTelefono2Corporativo = useTelefono2Corporativo((state) => state.telefono2Corporativo)
+
 
   const actualizarGerente = useGerentes((state)=> state.actualizarGerente)
   const actualizarAfp = useAfp((state)=> state.actualizarAfp)
   const actualizarIsapre = useIsapre((state)=> state.actualizarIsapre)
   const actualizarTrabajo = useTrabajo((state)=> state.actualizarTrabajo)
   const actualizarEmailCorporativo = useEmailCorporativo((state)=> state.actualizarEmailCorporativo)
+  const actualizarTelefono1Corporativo = useTelefono1Corporativo((state)=> state.actualizarTelefono1Corporativo)
+  const actualizarTelefono2Corporativo = useTelefono2Corporativo((state)=> state.actualizarTelefono2Corporativo)
 
 
 // --------------------------------------------------------------------------
@@ -55,10 +60,10 @@ const BadgeFormularioEmpleado = ({el}) => {
           actualizarEmailCorporativo(e.target.value)
       }
       else if(e.target.id === '3'){
-          setTelefono1Corporativo(e.target.value)
+          actualizarTelefono1Corporativo(e.target.value)
       }
       else if(e.target.id === '5'){
-          setTelefono2Corporativo(e.target.value)
+          actualizarTelefono2Corporativo(e.target.value)
       }
   }
 
@@ -146,7 +151,7 @@ const BadgeFormularioEmpleado = ({el}) => {
     <section className="w-full h-full relative">
         <div className="w-full h-full ">
           <label  htmlFor="">{titulo}</label>
-          <input name="" onChange={handleChangeInputFormEmpleadoLaboral} value={titulo === 'Gerencia *' ? valorGerente: titulo === 'AFP *' ? ValorAfp: titulo === 'Isapre / Fonasa *'? ValorIsapre: titulo === 'Forma de Trabajo establecida *' ? ValorTrabajo: titulo === 'Email Corporativo *' ? ValorEmailCorporativo: ''} id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
+          <input name="" onChange={handleChangeInputFormEmpleadoLaboral} value={titulo === 'Gerencia *' ? valorGerente: titulo === 'AFP *' ? ValorAfp: titulo === 'Isapre / Fonasa *'? ValorIsapre: titulo === 'Forma de Trabajo establecida *' ? ValorTrabajo: titulo === 'Email Corporativo *' ? ValorEmailCorporativo: titulo === 'Telefono 1 Corporativo *' ? ValorTelefono1Corporativo: titulo === 'Telefono 2 Corporativo (Opcional)' ? ValorTelefono2Corporativo: ''} id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
         </div>
 
             {renderBadge(abrirListaGerencia, 'Gerencia')}

@@ -1,7 +1,7 @@
 import { Outlet, useNavigate, useLocation, Link } from "react-router";
 import { dataCabeceraModal } from "./Utils/dataCabeceraModal";
 
-import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTrabajo } from "../Store/formEmpleadoLaboralStore";
+import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTelefono1Corporativo, useTelefono2Corporativo, useTrabajo } from "../Store/formEmpleadoLaboralStore";
 
 const Modal = () => {
 
@@ -16,6 +16,8 @@ const Modal = () => {
 
 
  const emailCorporativo = useEmailCorporativo((state) => state.emailCorporativo)
+ const telefono1Corporativo = useTelefono1Corporativo((state) => state.telefono1Corporativo)
+ const telefono2Corporativo = useTelefono2Corporativo((state) => state.telefono2Corporativo)
 
  //// ---------------------------------------------------------------------
 
@@ -33,7 +35,7 @@ const Modal = () => {
  // guardar
  const handleSubmitFormEmpleadoLaboral =(e)=>{
       e.preventDefault()
-      console.log(gerente, afp, isapre, trabajo, emailCorporativo);
+      console.log(gerente, afp, isapre, trabajo, emailCorporativo, telefono1Corporativo, telefono2Corporativo);
       
   }
 

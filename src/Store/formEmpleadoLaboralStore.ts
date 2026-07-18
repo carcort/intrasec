@@ -52,3 +52,22 @@ export const useEmailCorporativo = create((set)=>({
 }))
 
 
+
+export const useTelefono1Corporativo = create((set)=>({
+   telefono1Corporativo: '',
+   
+   actualizarTelefono1Corporativo: (atrapar)=> set(state => ({
+      telefono1Corporativo: atrapar
+   }))
+   
+}))
+
+
+export const useTelefono2Corporativo = create((set)=>({
+   telefono2Corporativo: '',
+   
+   actualizarTelefono2Corporativo: (atrapar)=> set(state => ({
+      telefono2Corporativo: atrapar
+   }))
+   
+}))
