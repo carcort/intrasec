@@ -1,8 +1,8 @@
-import { useOutletContext } from "react-router";
+//mport { useOutletContext } from "react-router";
 const ModalEmpleadoContrato = () => {
-  const { mensaje, usuario } = useOutletContext();
-   console.log(mensaje);
-   console.log(usuario);
+  // const { mensaje, usuario } = useOutletContext();
+  //  console.log(mensaje);
+  //  console.log(usuario);
   return (
     <div className="w-full h-full  grid place-items-center">
       <div className="w-[80%] h-[60%]  grid place-items-center ">

@@ -1,8 +1,5 @@
-
-
 //import BadgeFormularioEmpleado from "./BadgeFormularioEmpleado"
-
-import BadgeFormularioEmpleado from "./BadgeFormularioEmpleado"
+import BadgeFormularioEmpleadoPersonal from "./BadgeFormularioEmpleadoPersonal"
 
 
 const FormularioEmpleadoPersonal = ({titulo1,  data1}) => {
@@ -15,7 +12,7 @@ const FormularioEmpleadoPersonal = ({titulo1,  data1}) => {
           </header>
           <main className="w-full h-[85%] grid grid-rows-6 grid-cols-2 gap-x-12">
             {data1.map((el)=>{
-             return  <BadgeFormularioEmpleado
+             return  <BadgeFormularioEmpleadoPersonal
                 el={el}
              />
             

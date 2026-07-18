@@ -1,4 +1,4 @@
-import { useOutletContext } from "react-router";
+//import { useOutletContext } from "react-router";
 import FormularioEmpleadoCompetencias from "../Private/Rrhh/Components/FormularioEmpleadoCompetencias"
 import { dataBadgeEmpleadoCompetenciasHabilidades } from "../Private/Rrhh/Utils/dataBadgeEmpleadoCompetenciasHabilidades"
 
@@ -7,9 +7,9 @@ import { dataBadgeEmpleadoCompetenciasHabilidades } from "../Private/Rrhh/Utils/
 
 
 const ModalEmpleadoCompetencias = () => {
-  const { mensaje, usuario } = useOutletContext();
-   console.log(mensaje);
-   console.log(usuario);
+  // const { mensaje, usuario } = useOutletContext();
+  //  console.log(mensaje);
+  //  console.log(usuario);
   return (
     <div className="w-full h-full  grid place-items-center ">
       <div className="w-[95%] h-[95%] ">
