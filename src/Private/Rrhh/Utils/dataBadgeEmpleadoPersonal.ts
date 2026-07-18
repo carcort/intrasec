@@ -72,7 +72,7 @@ export const dataBadgeEmpleadoPersonal = [
 
    {
       id: '11',
-      titulo: 'Comuna de Residencia *',
+      titulo: 'Telefono de Emergencia *',
       placeHolder: 'Santiago',
       icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png'
    },

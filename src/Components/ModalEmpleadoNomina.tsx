@@ -1,13 +1,16 @@
-import FormularioEmpleado from "../Private/Rrhh/Components/FormularioEmpleado"
-//import { dataBadgeEmpleadoNominaBanco } from "../Private/Rrhh/Utils/dataBadgeEmpleadoNominaBanco"
+import { useOutletContext } from "react-router";
+import FormularioEmpleadoNomina from "../Private/Rrhh/Components/FormularioEmpleadoNomina"
 import { dataBadgeEmpleadoNominaTipo } from "../Private/Rrhh/Utils/dataBadgeEmpleadoNominaTipo"
 
 
 const ModalEmpleadoNomina = () => {
+  const { mensaje, usuario } = useOutletContext();
+   console.log(mensaje);
+   console.log(usuario);
   return (
     <div className="w-full h-full  grid place-items-center ">
       <div className="w-[95%] h-[95%] ">
-        <FormularioEmpleado
+        <FormularioEmpleadoNomina
           titulo1='Nomina'
           //titulo2='Datos Bancarios Empleado'
           data1={dataBadgeEmpleadoNominaTipo}

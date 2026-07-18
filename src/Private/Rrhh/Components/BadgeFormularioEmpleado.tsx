@@ -1,6 +1,35 @@
 import { useState } from "react";
+import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTrabajo } from "../../../Store/formEmpleadoLaboralStore";
+//import { useGerentes } from "../../../Store/gerentesStore";
+
+
 
 const BadgeFormularioEmpleado = ({el}) => {
+
+
+  //  TRAER STORE DESDE ZUSTAND
+
+  const valorGerente = useGerentes((state) => state.gerente)
+  const ValorAfp = useAfp((state) => state.afp)
+  const ValorIsapre = useIsapre((state) => state.isapre)
+  const ValorTrabajo = useTrabajo((state) => state.trabajo)
+  const ValorEmailCorporativo = useEmailCorporativo((state) => state.emailCorporativo)
+
+  const actualizarGerente = useGerentes((state)=> state.actualizarGerente)
+  const actualizarAfp = useAfp((state)=> state.actualizarAfp)
+  const actualizarIsapre = useIsapre((state)=> state.actualizarIsapre)
+  const actualizarTrabajo = useTrabajo((state)=> state.actualizarTrabajo)
+  const actualizarEmailCorporativo = useEmailCorporativo((state)=> state.actualizarEmailCorporativo)
+
+
+// --------------------------------------------------------------------------
+
+  // Valor del input obtenido desde el input
+
+  const [emailCorporativo, setEmailCorporativo] = useState('')
+  const [telefono1Corporativo, setTelefono1Corporativo] = useState('')
+  const [telefono2Corporativo, setTelefono2Corporativo] = useState('')
+
 
   const [abrirListaIsapres, setAbrirListaIsapres] = useState(false)
   const [abrirListaAfp, setAbrirListaAfp] = useState(false)
@@ -9,9 +38,33 @@ const BadgeFormularioEmpleado = ({el}) => {
   const [abrirListaEquipo, setAbrirListaEquipo] = useState(false)
   const [abrirListaTrabajo, setAbrirListaTrabajo] = useState(false)
 
+
+  // estados de select 
+  const [selectGerencia, setSelectGerencia] = useState('')
+  const [selectCargo, setSelectCargo] = useState('')
+  const [selectAfp, setSelectAfp] = useState('')
+  const [selectIsapres, setSelectIsapres] = useState('')
+  const [selectEquipo, setSelectEquipo] = useState('')
+  const [selectTrabajo, setSelectTrabajo] = useState('')
+
   const {id, titulo, placeHolder, data} = el
 
-  console.log(id);
+
+  const handleChangeInputFormEmpleadoLaboral =(e)=>{
+      if(e.target.id === '1'){
+          actualizarEmailCorporativo(e.target.value)
+      }
+      else if(e.target.id === '3'){
+          setTelefono1Corporativo(e.target.value)
+      }
+      else if(e.target.id === '5'){
+          setTelefono2Corporativo(e.target.value)
+      }
+  }
+
+  console.log(emailCorporativo);
+  
+
   
 
   const handleClickInputBadgeFormularioEmpleado =(e)=>{
@@ -35,110 +88,73 @@ const BadgeFormularioEmpleado = ({el}) => {
         setAbrirListaTrabajo(!abrirListaTrabajo)
     }
     else {
-      console.log('asas');
-      
+      console.log('asas'); 
     }
+  }
 
+
+  //Obterner el select de la lista desplegable
+  const handleClickSelectFormEmpleado =(e, id, nombre, categoria)=>{
+      if(categoria === 'Gerencia'){
+          // setSelectGerencia(nombre)
+          actualizarGerente(nombre)
+          setAbrirListaGerencia(false)
+      }
+      else if(categoria === 'Cargo'){
+          setSelectCargo(nombre)
+          setAbrirListaCargo(false)
+      }
+      else if(categoria === 'Afp'){
+          actualizarAfp(nombre)
+          setAbrirListaAfp(false)
+      }
+      else if(categoria === 'Isapres'){
+          actualizarIsapre(nombre)
+          setAbrirListaIsapres(false)
+      }
+      else if(categoria === 'Equipo'){
+          setSelectEquipo(nombre)
+          setAbrirListaEquipo(false)
+      }
+      else if(categoria === 'Trabajo'){
+          actualizarTrabajo(nombre)
+          setAbrirListaTrabajo(false)
+      }
+      else {
+        console.log('asas');
         
+      }
+  }
+
+  const renderBadge = (abrir, categoria)=>{
+      return abrir && 
+           <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
+            {data.map((el)=>{
+              return <button onClick={(e)=>handleClickSelectFormEmpleado(e, el.id, el.nombre, categoria)} className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
+                <div className="w-[4%] grid place-items-center">
+                  <img className="w-4 h-4" src={el.icono} alt="sd" />
+                </div>
+                <div className="w-[96%] flex justify-start">
+                  {el.nombre}
+                </div>
+              </button>
+            })}
+          </section>
   }
 
   return (
     <section className="w-full h-full relative">
         <div className="w-full h-full ">
           <label  htmlFor="">{titulo}</label>
-          <input id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
+          <input name="" onChange={handleChangeInputFormEmpleadoLaboral} value={titulo === 'Gerencia *' ? valorGerente: titulo === 'AFP *' ? ValorAfp: titulo === 'Isapre / Fonasa *'? ValorIsapre: titulo === 'Forma de Trabajo establecida *' ? ValorTrabajo: titulo === 'Email Corporativo *' ? ValorEmailCorporativo: ''} id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
         </div>
 
-        {abrirListaAfp && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40 ">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })}
-          </section>
-        }
-
-        {abrirListaIsapres && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })}
-          </section>
-        }
-
-        {abrirListaGerencia && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })}
-          </section>
-        }
-
-        {abrirListaCargo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })} 
-          </section>
-        }
-
-        {abrirListaEquipo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })}
-          </section>
-        }
-
-        {abrirListaTrabajo && 
-          <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40">
-            {data.map((el)=>{
-              return <button className="flex  items-center  w-full h-[32%] bg-gray-50 border border-gray-100 hover:bg-gray-100 cursor-pointer">
-                <div className="w-[5%] grid place-items-center">
-                  <img className="w-4 h-4" src={el.icono} alt="sd" />
-                </div>
-                <div className="w-[95%] flex justify-start">
-                  {el.nombre}
-                </div>
-              </button>
-            })}
-          </section>
-        }
-
+            {renderBadge(abrirListaGerencia, 'Gerencia')}
+            {renderBadge(abrirListaCargo, 'Cargo')}        
+            {renderBadge(abrirListaAfp, 'Afp')}
+            {renderBadge(abrirListaIsapres, 'Isapres')}
+            {renderBadge(abrirListaEquipo, 'Equipo')}
+            {renderBadge(abrirListaTrabajo, 'Trabajo')}
 
     </section>
   )

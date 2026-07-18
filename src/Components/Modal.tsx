@@ -1,18 +1,28 @@
 import { Outlet, useNavigate, useLocation, Link } from "react-router";
 import { dataCabeceraModal } from "./Utils/dataCabeceraModal";
 
+import { useAfp, useEmailCorporativo, useGerentes, useIsapre, useTrabajo } from "../Store/formEmpleadoLaboralStore";
+
 const Modal = () => {
 
  const navegar = useNavigate()
  const location = useLocation();
 
- const isActive = (path) => location.pathname === path;
+//  TRAER STORE DESDE ZUSTAND
+ const gerente = useGerentes((state) => state.gerente)
+ const afp = useAfp((state) => state.afp)
+ const isapre = useIsapre((state) => state.isapre)
+ const trabajo = useTrabajo((state) => state.trabajo)
 
- const handleClickGuardarModal =()=>{
-  // logica de guardado
-   alert('Empleado Guardado Correctamente')
-   navegar('/private/rrhh/administrador')
- }
+
+ const emailCorporativo = useEmailCorporativo((state) => state.emailCorporativo)
+
+ //// ---------------------------------------------------------------------
+
+
+
+
+ const isActive = (path) => location.pathname === path;
 
 
  const handleClickCerrarModal =()=>{
@@ -20,27 +30,13 @@ const Modal = () => {
  }
 
 
-//  const handleClickNavegarModal=(e, id, nombre)=>{
-//       if(id === '1'){
-//         navegar('/private/rrhh/administrador/nuevoEmpleado')
-//       }
-//       else if(id==='2'){
-//         navegar('/private/rrhh/administrador/nuevoEmpleado/personal')
-//       }
-//       else if(id==='3'){
-//         navegar('/private/rrhh/administrador/nuevoEmpleado/nomina')
-//       }
-//       else if(id==='4'){
-//         navegar('/private/rrhh/administrador/nuevoEmpleado/competencias')
-//       }
-//       else if(id==='5'){
-//         navegar('/private/rrhh/administrador/nuevoEmpleado/contrato')
-//       }
-//       else {
-//         console.log('as');
-        
-//       }
-//  }
+ // guardar
+ const handleSubmitFormEmpleadoLaboral =(e)=>{
+      e.preventDefault()
+      console.log(gerente, afp, isapre, trabajo, emailCorporativo);
+      
+  }
+
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm ">
@@ -66,15 +62,18 @@ const Modal = () => {
 
                </section>
                <div className="w-full h-[88%] ">
-                <Outlet />
+                <Outlet
+                
+                  //context={data}
+                />
                </div>
                <div className="w-[98%] h-[5.5%] flex font-semibold justify-end ">
                   <div className="w-[15%] h-full  grid grid-cols-2 gap-x-2">
-                      <button onClick={handleClickGuardarModal} className="bg-violet-500 text-white rounded cursor-pointer hover:bg-violet-600">
-                       Guardar
+                      <button type="submit" onClick={handleSubmitFormEmpleadoLaboral} className="bg-violet-500 text-white rounded cursor-pointer hover:bg-violet-600">
+                        Guardar
                       </button>
                       <button onClick={handleClickCerrarModal} className="bg-gray-900 text-white rounded cursor-pointer hover:bg-black">
-                       Cerrar
+                        Cerrar
                       </button>
                   </div>
                </div>
