@@ -8,8 +8,8 @@ const ModalEmpleadoNomina = () => {
     <div className="w-full h-full  grid place-items-center ">
       <div className="w-[95%] h-[95%] ">
         <FormularioEmpleado
-          titulo1='Tipo de Empleado'
-          titulo2='Datos Bancarios Empleado'
+          titulo1='Nomina'
+          //titulo2='Datos Bancarios Empleado'
           data1={dataBadgeEmpleadoNominaTipo}
           //data2={dataBadgeEmpleadoNominaBanco}
 

@@ -16,19 +16,17 @@ const BadgeFormularioEmpleado = ({el}) => {
 
   const handleClickInputBadgeFormularioEmpleado =(e)=>{
         
-    if(e.target.id === '5') {
-        setAbrirListaAfp(!abrirListaAfp)
-    }
-    else if(e.target.id === '6'){
-        setAbrirListaIsapres(!abrirListaIsapres)
-    }
-    else if(e.target.id === '7'){
+    if(e.target.id === '2'){
         setAbrirListaGerencia(!abrirListaGerencia)
     }
-
-
-    else if(e.target.id === '9'){
+    else if(e.target.id === '6'){
         setAbrirListaCargo(!abrirListaCargo)
+    }
+    else if(e.target.id === '7') {
+        setAbrirListaAfp(!abrirListaAfp)
+    }
+    else if(e.target.id === '9'){
+        setAbrirListaIsapres(!abrirListaIsapres)
     }
     else if(e.target.id === '10'){
         setAbrirListaEquipo(!abrirListaEquipo)
@@ -51,9 +49,6 @@ const BadgeFormularioEmpleado = ({el}) => {
           <input id={id} onClick={(e)=>handleClickInputBadgeFormularioEmpleado(e)} readOnly={titulo === 'Gerente Encargado' ? true: false} className={`${titulo === 'Gerente Encargado' && 'bg-gray-50 cursor-text'} mt-1 pl-2 w-full h-[45%] border border-gray-200 cursor-pointer focus:outline-none focus:border-violet-500`} placeholder={placeHolder} type="text" />
         </div>
 
-        {/* <div className=" bg-cyan-500">
-          
-        </div> */}
         {abrirListaAfp && 
           <section className="fixed -mt-8 w-[36%] h-[10%] bg-gray-50 max-h-[100px] overflow-auto z-40 ">
             {data.map((el)=>{

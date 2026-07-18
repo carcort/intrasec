@@ -9,7 +9,7 @@ const ModalEmpleadoLaboral = () => {
       <div className="w-[95%] h-[95%] ">
         <FormularioEmpleado
           titulo1='Datos Laborales'
-          titulo2='Area de Trabajo'
+          //titulo2='Area de Trabajo'
           data1={dataBadgeEmpleadoLaboral}
           //data2={dataBadgeEmpleadoLaboralArea}
 
