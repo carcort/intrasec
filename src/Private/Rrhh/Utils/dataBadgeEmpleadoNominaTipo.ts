@@ -38,6 +38,46 @@ export const dataBadgeEmpleadoNominaTipo = [
       placeHolder: '40, 45, Etc.',
       icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png'
    },
+
+   {
+      id: '7',
+      titulo: 'Nombre de Banco *',
+      placeHolder: 'Santander....',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
+     
+   },
+   {
+      id: '8',
+      titulo: 'Nombre de Banco 2 (Secundario) *',
+      placeHolder: 'Santander....',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/azure.png'
+     
+   },
+   {
+      id: '9',
+      titulo: 'Tipo de Cuenta 1 *',
+      placeHolder: 'Cuenta Corriente / Cuenta Vista / Cuenta Rut...',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png'
+   },
+   {
+      id: '10',
+      titulo: 'Tipo de Cuenta 2 (Secundaria) *',
+      placeHolder: 'Cuenta Corriente / Cuenta Vista / Cuenta Rut...',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/aws.png'
+   },
+   
+
+   {
+      id: '11',
+      titulo: 'Numero de Cuenta 1 *',
+      placeHolder: 'xxxxxxxxxxx',
+      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/angular.png'
+   },
+   {
+      id: '12',
+      titulo: 'Numero de Cuenta 2 (Cuenta Secundaria) *',
+      placeHolder: 'xxxxxxxxxxx',
+   },
    
    // {
    //    id: '6',

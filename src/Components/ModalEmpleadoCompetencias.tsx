@@ -1,6 +1,7 @@
 import FormularioEmpleado from "../Private/Rrhh/Components/FormularioEmpleado"
-import { dataBadgeEmpleadoCompetenciasAcademico } from "../Private/Rrhh/Utils/dataBadgeEmpleadoCompetenciasAcademico"
+//import { dataBadgeEmpleadoCompetenciasAcademico } from "../Private/Rrhh/Utils/dataBadgeEmpleadoCompetenciasAcademico"
 import { dataBadgeEmpleadoCompetenciasHabilidades } from "../Private/Rrhh/Utils/dataBadgeEmpleadoCompetenciasHabilidades"
+//import { dataBadgeEmpleadoCompetenciasHabilidades } from "../Private/Rrhh/Utils/dataBadgeEmpleadoCompetenciasHabilidades"
 
 
 
@@ -12,8 +13,8 @@ const ModalEmpleadoCompetencias = () => {
         <FormularioEmpleado
           titulo1='Datos Academicos del Empleado'
           titulo2='Habilidades del Empleado'
-          data1={dataBadgeEmpleadoCompetenciasAcademico}
-          data2={dataBadgeEmpleadoCompetenciasHabilidades}
+          data1={dataBadgeEmpleadoCompetenciasHabilidades}
+          //data2={dataBadgeEmpleadoCompetenciasHabilidades}
 
         />
       </div>

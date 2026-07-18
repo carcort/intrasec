@@ -1,6 +1,6 @@
 import FormularioEmpleado from "../Private/Rrhh/Components/FormularioEmpleado"
 import { dataBadgeEmpleadoLaboral } from "../Private/Rrhh/Utils/dataBadgeEmpleadoLaboral"
-import { dataBadgeEmpleadoLaboralArea } from "../Private/Rrhh/Utils/dataBadgeEmpleadoLaboralArea"
+//import { dataBadgeEmpleadoLaboralArea } from "../Private/Rrhh/Utils/dataBadgeEmpleadoLaboralArea"
 
 
 const ModalEmpleadoLaboral = () => {
@@ -11,7 +11,7 @@ const ModalEmpleadoLaboral = () => {
           titulo1='Datos Laborales'
           titulo2='Area de Trabajo'
           data1={dataBadgeEmpleadoLaboral}
-          data2={dataBadgeEmpleadoLaboralArea}
+          //data2={dataBadgeEmpleadoLaboralArea}
 
         />
       </div>

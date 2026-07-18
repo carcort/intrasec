@@ -1,5 +1,5 @@
 import FormularioEmpleado from "../Private/Rrhh/Components/FormularioEmpleado"
-import { dataBadgeEmpleadoNominaBanco } from "../Private/Rrhh/Utils/dataBadgeEmpleadoNominaBanco"
+//import { dataBadgeEmpleadoNominaBanco } from "../Private/Rrhh/Utils/dataBadgeEmpleadoNominaBanco"
 import { dataBadgeEmpleadoNominaTipo } from "../Private/Rrhh/Utils/dataBadgeEmpleadoNominaTipo"
 
 
@@ -11,7 +11,7 @@ const ModalEmpleadoNomina = () => {
           titulo1='Tipo de Empleado'
           titulo2='Datos Bancarios Empleado'
           data1={dataBadgeEmpleadoNominaTipo}
-          data2={dataBadgeEmpleadoNominaBanco}
+          //data2={dataBadgeEmpleadoNominaBanco}
 
         />
       </div>
