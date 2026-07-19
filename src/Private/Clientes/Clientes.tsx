@@ -5,9 +5,6 @@ import Publica from "./Publica/Publica"
 import Privada from "./Privada/Privada"
 import GerenteClientes from "./GerenteClientes/GerenteClientes"
 import TeamLeaderClientes from "./TeamLeaderClientes/TeamLeaderClientes"
-//import TeamLeaderComercial from "./TeamLeaderClientes/TeamLeaderClientes"
-// import TeamLeader from "./TeamLeaderComercial/TeamLeaderComercial"
-// import LayoutGerenteClientes from "./GerenteClientes/LayoutGerenteClientes"
 
 
 const Clientes = ({usuario}) => {

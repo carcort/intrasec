@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router";
 import LayoutPrivate from "./LayoutPrivate";
 import Clientes from "./Clientes/Clientes";
-import Finanzas from "./Finanzas/Finanzas";
 import Pivote from "./Pivote";
 import Rrhh from "./Rrhh/Rrhh";
 import Directiva from "./Directiva/Directiva";
@@ -25,10 +24,10 @@ const Private = () => {
     email_laboral: 'juan_perez@intrasec.com',
     telefono_personal: '+5697562222',
     email_personal: 'juenitoxxxx@gmail.com',
-    gerencia: 'Rrhh',
+    gerencia: 'Comercial',
     tipo_empresa: 'Privada',
     division: 'Industrial',
-    cargo: 'Administrador_Rrhh',
+    cargo: 'Gerente_Comercial',
     //cargo: 'GerenteClientes',
     area: 'Energia',
     sub_area: '',
