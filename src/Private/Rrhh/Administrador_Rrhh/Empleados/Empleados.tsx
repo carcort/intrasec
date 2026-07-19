@@ -18,7 +18,10 @@ const Empleados = ({usuario}) => {
       <div className="w-full h-[7%] flex justify-end bg-gray-100">
         filtros del admin 
       </div>
-      <div className="w-full h-[83%] grid grid-cols-8 grid-rows-2 gap-6">
+      <header className="w-full h-[7%] grid place-items-center text-lg text-gray-700">
+        Empleados
+      </header>
+      <div className="w-full h-[76%] grid grid-cols-8 grid-rows-2 gap-6">
         {dataEmpleados.map((el)=>{
         return <BadgeEmpleado
                 el={el}

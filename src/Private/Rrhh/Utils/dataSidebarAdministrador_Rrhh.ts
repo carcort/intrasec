@@ -237,4 +237,43 @@ export const dataSidebarAdministrador_Rrhh = [
      }
    ]
  },
+ {
+   id: '7',
+   nombre: 'Desvinculaciones',
+   icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nestjs.png',
+   ruta: '/private/rrhh/administrador/desvinculaciones',
+   abrir: true,
+   modal: [
+     {
+       id: '1',
+       titulo: 'Favoritos',
+       iconoTitulo: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/cerrar.png',
+       logicaSearch: '',
+       iconoSearch: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/iconoLupa.png',
+       dataLista: [
+        {
+         id: '1',
+         icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
+         nombre: 'Mis Tareas'
+        },
+        {
+         id: '2',
+         icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/nodejs.png',
+         nombre: 'Otras'
+        },
+        {
+         id: '3',
+         icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/react.png',
+         nombre: 'Otra2'
+        },
+        {
+         id: '4',
+         icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/cerrar.png',
+         nombre: 'Otra3'
+        },
+
+       ]
+     }
+   ]
+ },
 ]
