@@ -13,13 +13,13 @@ const LayoutPrivate = ({usuario}) => {
     estaAutenticado ? 
     <div className="w-screen h-screen ">
        
-       <nav className="w-full h-[5%] bg-violet-500 flex justify-end">
+       <nav className="w-full h-[4%] bg-violet-500 flex justify-end">
             <Navbar
               data={dataNavbarPrivate}  
             />    
        </nav>
 
-       <div className="w-full h-[95%]">
+       <div className="w-full h-[96%]">
         <Outlet />
        </div>
 

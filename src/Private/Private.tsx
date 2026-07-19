@@ -7,12 +7,12 @@ import Rrhh from "./Rrhh/Rrhh";
 import Directiva from "./Directiva/Directiva";
 
 import Perfil from "./Perfil/Perfil";
-
-
+import Comercial from "./Comercial/Comercial";
+import Legal from "./Legal/Legal";
+import Tecnico from "./Tecnico/Tecnico";
 
 const Private = () => {
 
-  
 
   const usuario = {
     id: '1',
@@ -44,8 +44,10 @@ const Private = () => {
             <Route index element={<Pivote usuario={usuario } />} />
             <Route path="directiva/*" element={<Directiva usuario={usuario } />} />
             <Route path="clientes/*" element={<Clientes usuario={usuario } />} />
-            <Route path="finanzas/*" element={<Finanzas usuario={usuario } />} />
+            <Route path="comercial/*" element={<Comercial usuario={usuario } />} />
             <Route path="rrhh/*" element={<Rrhh usuario={usuario } />} />
+            <Route path="legal/*" element={<Legal usuario={usuario } />} />
+            <Route path="tecnico/*" element={<Tecnico usuario={usuario } />} />
 
 
 

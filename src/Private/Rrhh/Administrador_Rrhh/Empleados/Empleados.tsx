@@ -15,20 +15,20 @@ const Empleados = ({usuario}) => {
   return (
     <div className="w-[95%] h-[95%]   ">
 
-      <div className="w-full h-[7%] flex justify-end bg-gray-100">
+      <div className="w-full h-[5%] flex justify-end bg-gray-100">
         filtros del admin 
       </div>
-      <header className="w-full h-[7%] grid place-items-center text-lg text-gray-700">
+      <header className="w-full h-[12%] grid place-items-center  text-gray-600 font-semibold">
         Empleados
       </header>
-      <div className="w-full h-[76%] grid grid-cols-8 grid-rows-2 gap-6">
+      <div className="w-full h-[77%] grid grid-cols-8 grid-rows-2 gap-6">
         {dataEmpleados.map((el)=>{
         return <BadgeEmpleado
                 el={el}
         />
       })}
       </div>
-      <section className="w-full h-[10%] flex justify-center ">
+      <section className="w-full h-[6%] flex justify-center ">
           <div className="flex w-[10%] items-center justify-center h-full font-semibold text-gray-600 text-lg">
                   <div className="w-[40%] f-[50%]">
                     1-14 / 51
