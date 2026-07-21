@@ -11,7 +11,7 @@ const PivoteEnergia = ({usuario}) => {
   }
 
   if(area === 'Energia'){
-    return <Navigate to={'/private/clientes/privada/industrial/consultor/misClientes'} replace />;
+    return <Navigate to={'/private/clientes/privada/industrial/consultor/home'} replace />;
   }
   else {
     return <Navigate to={'/'} replace />;

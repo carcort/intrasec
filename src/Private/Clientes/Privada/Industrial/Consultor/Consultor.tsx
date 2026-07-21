@@ -6,7 +6,7 @@ import Sanitaria from "./Sanitaria/Sanitaria"
 import Telecomunicaciones from "./Telecomunicaciones/Telecomunicaciones"
 import Transporte from "./Transporte/Transporte"
 import Crm from "./Crm/Crm"
-import MisClientes from "./MIsClientes/MisClientes"
+import HomeConsultor from "./HomeConsultor/HomeConsultor"
 
 
 const Consultor = ({usuario}) => {
@@ -21,7 +21,7 @@ const Consultor = ({usuario}) => {
 
 
 
-            <Route path="misClientes/*" element={<MisClientes usuario={usuario } />} />
+            <Route path="home/*" element={<HomeConsultor usuario={usuario } />} />
             <Route path="crm/*" element={<Crm usuario={usuario } />} />
 
 

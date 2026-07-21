@@ -4,9 +4,9 @@
 export const dataSidebarConsultorIndustrial= [
   {
      id: '1',
-     nombre: 'MisClientes',
+     nombre: 'Home',
      icono: 'https://roudev-s3-assets.s3.us-east-1.amazonaws.com/AssetsRoudev/Icons/home.png',
-     ruta: '/private/clientes/privada/industrial/consultor/misClientes'
+     ruta: '/private/clientes/privada/industrial/consultor/home'
   },
   {
      id: '2',
