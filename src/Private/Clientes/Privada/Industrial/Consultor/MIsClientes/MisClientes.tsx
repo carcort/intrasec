@@ -7,7 +7,7 @@ const MisClientes = ({usuario}) => {
     <div className="w-[97%] h-full   ">
 
       <div className="w-full h-[5%] flex justify-end bg-gray-100">
-        filtros del gestor papuuu -- para cambiar y dejar la version 44
+        filtros del gestor papuuu -- VOY A METER A CODEX, SI ALGO SALE MAL VOLVER A LA V44
       </div>
       <div className="w-full h-[85%]">
         <header className="w-full h-[13%] grid place-items-center text-lg font-semibold text-gray-600">
